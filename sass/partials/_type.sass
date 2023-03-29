@@ -1,0 +1,42 @@
+#landingpage
+    h2.hdl2
+        @include type(50px, 1.25, 700)
+        @include roboto
+        color: $grey-6
+
+    h3.hdl3
+        @include type(30px, 1.25, 500)
+        @include roboto
+        color: $grey-6
+
+    h4.hdl4, span.hdl4
+        @include type(14px, 1.5, 500)
+        @include roboto
+
+    h5.hdl5, li.hdl5, span.hdl5
+        @include type(13px,  1.5, 500)
+        @include roboto
+
+    p.textM
+        @include type(20px, 1.5, 400)
+        @include roboto
+
+    p.textS,  li.textS, a.textS
+        @include type(14px, 1.5, 400)
+        @include roboto
+
+    p.textXS, li.textXS
+        @include type(13px, 1.5, 400)
+        @include roboto
+
+@media only screen and (max-width: 1035px)
+    .mobile #landingpage,
+    .mobileapp #landingpage
+        h2.hdl2
+            @include type(30px, 1.25, 700)
+
+        h3.hdl3
+            @include type(24px, 1.25, 500)
+
+        p.textM
+            @include type(16px, 1.5, 400)

@@ -1,0 +1,495 @@
+@import ../sass/partials/mixins
+@import ../sass/partials/colors
+@import ../sass/partials/type
+@import ../sass/partials/reset
+@import ../sass/partials/switcher
+
+#landingpage
+    @include roboto
+    color: $grey-6
+
+    .is-visible
+        transform: scaleY(1)!important
+        max-height: 422px!important
+        opacity: 1!important
+
+    .lp
+        &-header
+            @include section(96, 80, 80, 80)
+            background: linear-gradient(to  bottom,  $white 50%, $grey-0 100%)
+            position: relative
+
+            &--caption
+                @include flexVert
+                gap: 40px
+                position: relative
+                z-index: 5
+
+                p
+                    margin-top: 0
+
+            &--list
+                @include flexVert
+                gap: 16px
+                list-style: none
+                margin-left: 32px
+
+                li
+                    position: relative
+                    
+                    &::before
+                        background-image: url('https://i.alza.cz/Foto/or/lp/pojisteni-schopnosti-splacet/img/marker.svg')
+                        content: ''
+                        width: 20px
+                        height: 20px
+                        position: absolute
+                        top: 50%
+                        left: -32px
+                        transform: translateY(-50%)
+                        background-repeat: no-repeat
+                        background-size: cover
+                        background-position: center
+
+
+            &--backdrop
+                position: absolute
+                top: 0
+                right: -1px
+                width: 35%
+                
+        &-case
+            @include section(80, 80, 80, 80)
+            @include flexVert
+            gap: 48px
+            background-color: $grey-0
+
+            &--caption
+                text-align: center
+                @include flexVert
+                align-items: center
+                gap: 24px
+
+                p
+                    width: 70%
+                    margin-top: 0
+
+            &--box
+                background-color: $white
+                border-radius: 8px
+                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15)
+                padding: 64px
+                overflow:  hidden
+
+                .icon
+                    width: 64px
+                    height: 64px
+
+                a
+                    transition: all 300ms ease-in-out
+
+                    &:hover
+                        color: $blue-alza
+
+            &--icons
+                @include flexOr
+                justify-content: space-between
+
+            &--unit
+                @include flexVert
+                align-items: center
+                gap: 24px
+                width: 124px
+
+                h4.hdl4
+                    text-align: center
+                    color: $grey-6
+
+            &--toggle--content
+                margin-top: 40px
+                max-height: 0
+                overflow: hidden
+                transition: all 500ms ease-in-out
+                opacity: 0
+
+                a
+                    color: $blue-media
+                    transition: all 300ms ease-in-out
+
+                    &:hover
+                        color: $blue-alza
+
+                p.lp-case--conditions
+                    margin-top: 40px
+
+            &--toggle--button
+                margin: auto
+                color: $grey-5
+                display: block
+                width: 102px
+                text-align: center
+                cursor: pointer
+
+            &--table
+                @include flexOr
+                padding: 2px 4px 0 0
+
+                ul
+                    list-style-type: none
+
+            &--legend
+                text-align: right
+                margin-top: 74px
+
+                &--cell
+                    &:nth-of-type(odd)
+                        background-color: $grey-0
+
+                    &:nth-of-type(1)
+                        height: 59px
+                        padding: 21px 20px
+
+                    &:nth-of-type(2)
+                        height: 78.5px
+                        padding: 21px 20px
+
+                    &:nth-of-type(3)
+                        height: 117.5px
+                        padding: 38px 20px
+
+            &--boxes
+                @include flexOr
+                gap: 20px
+                
+            &--column
+                text-align: center
+                flex: 1 1 0
+                background-color: $white
+                border-radius: 4px
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+
+                &:nth-of-type(-n+2) .lp-case--column--cell:last-of-type
+                    padding: 20px
+                    
+                &:last-of-type
+                    flex-basis: 4%
+
+                    .lp-case--column--cell:last-of-type
+                        padding-top: 88px
+            
+                &--cell
+                    padding: 10px 20px
+
+                    &:nth-of-type(even)
+                        background-color: $grey-0
+
+                    &:first-of-type
+                        padding: 20px 20px 15px 20px
+
+                    &:last-of-type
+                        margin-bottom: 32px
+
+            &--conditions
+                text-align: center
+                    
+        &-purchase
+            @include section(80, 122, 60, 122)
+            @include flexVert
+            gap: 48px
+            position: relative
+
+            &--caption
+                text-align: center
+                @include flexVert
+                align-items: center
+                gap: 24px
+
+                p
+                    width: 90%
+                    margin-top: 0
+
+                a
+                    color: $blue-media
+                    transition: all 300ms ease-in-out
+
+                    &:hover
+                        color: $blue-alza
+
+            &--icons
+                @include flexOr
+                gap: 24px
+
+                .icon
+                    width: 64px
+                    height: 64px
+
+            &--unit
+                @include flexVert
+                align-items: center
+                gap: 24px
+                flex: 1 1 0
+
+                h4.hdl4, p
+                    text-align: center
+                    margin-top: 0
+                    color: $grey-6
+
+                a
+                    color: $grey-6
+                    text-decoration: none
+
+            &--screen
+                border-radius: 4px
+                z-index: 10
+
+            &--backdrop
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 35%
+                z-index: 1
+
+        &-faq
+            @include section(80, 80, 80, 80)
+            @include flexVert
+            align-items: center
+            gap: 48px
+            background-color: $grey-0
+
+            &--caption
+                text-align: center
+                @include flexVert
+                gap: 24px
+
+                p
+                    margin-top: 0
+
+            &--units
+                @include flexVert
+                gap: 16px
+                width: 100%
+
+            &--box 
+                background-color: $white
+                border-radius: 8px
+                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15)
+                padding: 16px
+                cursor: pointer
+                transition: all 300ms ease-in-out
+
+                &:hover
+                    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2)
+
+                &__handle 
+                    @include flexOr
+                    gap: 16px
+                    color: $blue-media
+
+                    h4.hdl4
+                        color: $blue-media
+                
+
+                &__content 
+                    padding: 0 36px
+                    max-height: 0
+                    overflow: hidden
+                    will-change: max-height
+                    transition: all 300ms ease-in-out
+                    opacity: 0
+
+                    p
+                        margin-top: 0
+                
+                &__active 
+                    .lp-faq--box__content 
+                        padding: 8px 36px 20px
+                        opacity: 1
+
+                    .lp-faq--box--icon
+                        transform: rotate(0deg)
+
+                &--icon
+                    width: 20px
+                    height: 20px
+                    transform: rotate(180deg)
+                    transition: all 300ms  ease-in-out
+
+            a
+                color: $grey-5
+                transition: all 300ms ease-in-out
+
+                &:hover
+                    color: $blue-alza
+		
+	
+.layout-0 #landingpage
+    .is-visible
+        max-height: 506px !important
+
+    .lp-case
+        &--box
+            padding: 48px
+
+        &--legend
+            margin-top: 59px
+
+            &--cell
+                &:nth-of-type(1)
+                    height: 98.5px
+                    padding: 40px 20px
+
+                &:nth-of-type(3)
+                    height: 175.5px
+                    padding: 66px 20px
+
+        &--boxes
+            gap: 10px
+            
+        &--column
+            &:last-of-type
+                flex-basis: 2%
+
+                .lp-case--column--cell:last-of-type
+                    padding-top: 100px
+
+            &:nth-of-type(2), &:nth-of-type(4)
+                .lp-case--column--cell:nth-of-type(2)
+                    padding: 30px 10px
+
+            &:nth-of-type(1), &:nth-of-type(2)
+                .lp-case--column--cell:last-of-type
+                    padding: 39px 10px
+                      
+            &--cell
+                padding: 10px
+
+                &:nth-of-type(2), &:nth-of-type(4)
+                    padding: 20px 10px
+
+@media only screen and (max-width: 1035px)
+    .mobile #landingpage,
+    .mobileapp #landingpage
+        .is-visible
+            max-height: 506px!important
+
+        .lp
+            &-case
+                &--toggle--content
+                    overflow-x: visible
+                    position: relative
+                    margin-top: 20px
+
+                &--table
+                    width: 1018px
+                    overflow-x: scroll
+                    padding: 2px 4px 32px 0
+                    margin-top: 96px
+
+                &--conditions
+                    margin-bottom: 40px
+                    position: sticky
+                    bottom: 100%
+                    left: 0
+
+                &--icons
+                    flex-wrap: wrap
+                    justify-content: center
+                    gap: 32px
+
+                &--unit
+                    gap: 8px
+
+@media only screen and (max-width: 826px)
+    .mobile #landingpage,
+    .mobileapp #landingpage
+        .lp
+            &-header
+                @include section(48, 20, 40, 20)
+
+                &--caption
+                    h2, p
+                        text-align: center
+
+            &-case
+                @include section(40, 20, 40, 20)
+
+                &--caption
+                    p
+                        width: 100%
+
+                &--icons
+                    flex-wrap: wrap
+                    justify-content: center
+                    gap: 32px
+
+                &--box
+                    padding: 48px
+
+            &-purchase
+                @include section(40, 20, 40, 20)
+
+                &--caption
+                    p
+                        width: 100%
+
+            &-faq
+                @include section(40, 20, 40, 20)
+
+                &--caption
+                    p
+                        width: 100%
+
+                &--box
+                    &__handle h4
+                        flex: 1 1 0
+
+                    &--icon
+                        width: 12px
+
+                    &__content 
+                        padding: 0 28px
+                
+                    &__active 
+                        .lp-faq--box__content 
+                            padding: 8px 28px 20px
+
+@media only screen and (max-width: 622px)
+    .mobile #landingpage,
+    .mobileapp #landingpage
+        .lp
+            &-case
+                &--table
+                    margin-top: 106px
+
+            &-purchase
+                &--icons
+                    flex-direction: column
+                    align-items: center
+                    gap: 32px
+                
+                &--unit
+                    max-width: 350px
+                    gap: 8px
+
+@media only screen and (max-width: 430px)
+    .mobile #landingpage,
+    .mobileapp #landingpage
+        .is-visible
+            max-height: 536px!important
+        
+        .lp
+            &-case
+                &--table
+                    margin-top: 126px
+
+
+@media only screen and (max-width: 355px)
+    .mobile #landingpage,
+    .mobileapp #landingpage
+        .is-visible
+            max-height: 556px!important
+        
+        .lp
+            &-case
+                &--table
+                    margin-top: 156px
+
