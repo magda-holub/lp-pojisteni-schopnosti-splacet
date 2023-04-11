@@ -1,363 +1,616 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>alza</title>
-        <link rel="stylesheet" href="sass/main.min.css">
-    </head>
 
-    <body>
-        <div id="layout_switch">
-            <button type="button">M</button>
-            <button type="button">3</button>
-            <button type="button">4</button>
-        </div>
-        <div id="testLayout" class="layout-1">
-            <div id="articlePage">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pojištění schopnosti splácet</title>
+    <link rel="stylesheet" href="sass/main.min.css">
+</head>
 
-<!-- landing page content start -->
-                <div id="landingpage">
-                    <div class="lp">
-                        <!-- header -->
-                        <section class="lp-header">
-                            <div class="lp-header--caption">
-                                <h2 class="hdl2">Pojištění schopnosti splácet</h2>
+<body>
 
-                                <p class="textM">Ztráta zaměstnání? Nehoda? Život je plný nečekaných zvratů. <br />S&nbsp;pojištěním schopnosti splácet získáte jistotu, že&nbsp;své&nbsp;závazky splatíte vždy&nbsp;včas.</p>
+    <!--switcher-->
+    <div id="layout_switch">
+        <button type="button">
+            <svg class="icon">
+                <use xlink:href="#i-mobile"></use>
+            </svg>
+        </button>
+        <button type="button">
+            <svg class="icon">
+                <use xlink:href="#i-desktop-3"></use>
+            </svg>
+        </button>
+        <button type="button" class="active">
+            <svg class="icon">
+                <use xlink:href="#i-desktop-4"></use>
+            </svg>
+        </button>
+    </div>
+    <!--end of-->
 
-                                <ul class="lp-header--list">
-                                    <li class="lp-header--listitem textS">Proklientské, jednoduché a&nbsp;transparentní pojistné podmínky, prostě pojištění bez&nbsp;skrytých kliček</li>
-                                    <li class="lp-header--listitem textS">Jistota v&nbsp;nepříznivých životních situacích</li>
-                                    <li class="lp-header--listitem textS">Snadné sjednání: bez&nbsp;lékařských prohlídek a&nbsp;zbytečného papírování</li>
-                                    <li class="lp-header--listitem textS">Široká škála pojištěných životních situací, např.&nbsp;ztráta zaměstnání, ošetřování člena rodiny, úraz, nemoc či&nbsp;smrt</li>
-                                </ul>
-                            </div>
-                            <img src="https://i.alza.cz/Foto/or/lp/pojisteni-schopnosti-splacet/img/header_cutout.png" alt="pojištění schopnosti splácet" height="409" width="417" class="lp-header--backdrop" srcset="https://i.alza.cz/Foto/or/lp/pojisteni-schopnosti-splacet/img/header_cutout.png, https://i.alza.cz/Foto/or/lp/pojisteni-schopnosti-splacet/img/header_cutout@2x.png 2x" />
-                        </section>
+    <div id="testLayout" class="layout-1">
+        <div id="articlePage">
 
-                        <!-- case -->
-                        <section class="lp-case">
-                            <div class="lp-case--caption">
-                                <h3 class="hdl3">Kdy Vám pojištění pomůže?</h3>
+            <!-- landing page content start -->
+            <div id="landingpage">
+                <div class="lp">
 
-                                <p class="textS">Kvůli výpadku příjmů se i&nbsp;zodpovědná rodina může rychle dostat do prodlení se&nbsp;splátkami. Zatímco Vy budete mít hlavu plnou jiných starostí, nepřidávejte k&nbsp;nim i&nbsp;starost o&nbsp;splácení úvěru.</p>
+                    <!-- header -->
+                    <section class="lp-header">
+                        <div class="lp-header__caption">
+                            <h2 class="hdl2">Pojištění schopnosti splácet</h2>
 
-                                <p class="textS">S <span class="hdl4">pojištěním schopnosti splácet</span> se budete mít vždy o&nbsp;koho opřít.</p>
-                            </div>
+                            <p class="textM">Ztráta zaměstnání? Nehoda? Život je plný nečekaných zvratů.
+                                <br />S&nbsp;pojištěním schopnosti splácet získáte jistotu, že&nbsp;své&nbsp;závazky
+                                splatíte vždy&nbsp;včas.</p>
 
-                            <div class="lp-case--box">
-                                <div class="lp-case--icons">
-                                    <div class="lp-case--unit">
-                                        <svg class="icon">
-                                            <use xlink:href="#job"></use>
-                                        </svg>
+                            <ul class="lp-header__list">
+                                <li class="lp-header__listitem textS">Proklientské, jednoduché a&nbsp;transparentní
+                                    pojistné podmínky, prostě pojištění bez&nbsp;skrytých kliček</li>
+                                <li class="lp-header__listitem textS">Jistota v&nbsp;nepříznivých životních situacích
+                                </li>
+                                <li class="lp-header__listitem textS">Snadné sjednání: bez&nbsp;lékařských prohlídek
+                                    a&nbsp;zbytečného papírování</li>
+                                <li class="lp-header__listitem textS">Široká škála pojištěných životních situací,
+                                    např.&nbsp;ztráta zaměstnání, ošetřování člena rodiny, úraz, nemoc či&nbsp;smrt</li>
+                            </ul>
+                        </div>
+                        <img src="https://cdn.alza.cz/Foto/or/lp/pojisteni-schopnosti-splacet/img/header_cutout.png"
+                            alt="pojištění schopnosti splácet" height="409" width="417" class="lp-header__backdrop"
+                            srcset="https://cdn.alza.cz/Foto/or/lp/pojisteni-schopnosti-splacet/img/header_cutout.png, https://cdn.alza.cz/Foto/or/lp/pojisteni-schopnosti-splacet/img/header_cutout@2x.png 2x" />
+                    </section>
 
-                                        <h4 class="hdl4">Ztráta zaměstnání / <br />Zrušení živnosti</h4>
-                                    </div>
-                                    <div class="lp-case--unit">
-                                        <svg class="icon">
-                                            <use xlink:href="#illness"></use>
-                                        </svg>
+                    <!-- case -->
+                    <section class="lp-case">
+                        <div class="lp-case__caption">
+                            <h3 class="hdl3">Kdy Vám pojištění pomůže?</h3>
 
-                                        <h4 class="hdl4">Pracovní <br />neschopnost</h4>
-                                    </div>
-                                    <div class="lp-case--unit">
-                                        <svg class="icon">
-                                            <use xlink:href="#care"></use>
-                                        </svg>
+                            <p class="textS">Kvůli výpadku příjmů se i&nbsp;zodpovědná rodina může rychle dostat do
+                                prodlení se&nbsp;splátkami. Zatímco Vy budete mít hlavu plnou jiných starostí,
+                                nepřidávejte k&nbsp;nim i&nbsp;starost o&nbsp;splácení úvěru.</p>
 
-                                        <h4 class="hdl4">Ošetřování <br />člena rodiny</h4>
-                                    </div>
-                                    <div class="lp-case--unit">
-                                        <svg class="icon">
-                                            <use xlink:href="#handicap"></use>
-                                        </svg>
+                            <p class="textS">S <span class="hdl4">pojištěním schopnosti splácet</span> se budete mít
+                                vždy o&nbsp;koho opřít.</p>
+                        </div>
 
-                                        <h4 class="hdl4">Invalidita <br />(II. a III. stupeň)</h4>
-                                    </div>
-                                    <div class="lp-case--unit">
-                                        <svg class="icon">
-                                            <use xlink:href="#death"></use>
-                                        </svg>
+                        <div class="lp-case__box">
+                            <div class="lp-case__icons">
+                                <div class="lp-case__unit">
+                                    <svg class="icon">
+                                        <use xlink:href="#job"></use>
+                                    </svg>
 
-                                        <h4 class="hdl4">Úmrtí</h4>
-                                    </div>
+                                    <h4 class="hdl4">Ztráta zaměstnání / <br />Zrušení živnosti</h4>
                                 </div>
+                                <div class="lp-case__unit">
+                                    <svg class="icon">
+                                        <use xlink:href="#illness"></use>
+                                    </svg>
 
-                                <div class="lp-case--toggle--content" id="toggleContent">
-                                    <div class="lp-case--table">
-                                        <ul class="lp-case--legend">
-                                            <li class="lp-case--legend--cell hdl5">Platnost</li>
-                                            <li class="lp-case--legend--cell hdl5">Dluh do 10&nbsp;000&nbsp;Kč</li>
-                                            <li class="lp-case--legend--cell hdl5">Dluh nad 10&nbsp;000&nbsp;Kč</li>
+                                    <h4 class="hdl4">Pracovní <br />neschopnost</h4>
+                                </div>
+                                <div class="lp-case__unit">
+                                    <svg class="icon">
+                                        <use xlink:href="#care"></use>
+                                    </svg>
+
+                                    <h4 class="hdl4">Ošetřování <br />člena rodiny</h4>
+                                </div>
+                                <div class="lp-case__unit">
+                                    <svg class="icon">
+                                        <use xlink:href="#handicap"></use>
+                                    </svg>
+
+                                    <h4 class="hdl4">Invalidita <br />(II. a III. stupeň)</h4>
+                                </div>
+                                <div class="lp-case__unit">
+                                    <svg class="icon">
+                                        <use xlink:href="#death"></use>
+                                    </svg>
+
+                                    <h4 class="hdl4">Úmrtí</h4>
+                                </div>
+                            </div>
+
+                            <div class="lp-case__toggle__content" id="toggleContent">
+                                <div class="lp-case__table">
+                                    <ul class="lp-case__legend">
+                                        <li class="lp-case__legend__cell hdl5">Platnost</li>
+                                        <li class="lp-case__legend__cell hdl5">Dluh do 10&nbsp;000&nbsp;Kč</li>
+                                        <li class="lp-case__legend__cell hdl5">Dluh nad 10&nbsp;000&nbsp;Kč</li>
+                                    </ul>
+
+                                    <div class="lp-case__boxes">
+                                        <ul class="lp-case__column">
+                                            <li class="lp-case__column__cell hdl5">Ztráta zaměstnání / <br />Zrušení
+                                                živnosti</li>
+                                            <li class="lp-case__column__cell textXS">Zaměstnanecký poměr, služební poměr
+                                                či&nbsp;OSVČ.</li>
+                                            <li class="lp-case__column__cell textXS"><span class="hdl5">Okamžitá úhrada
+                                                    dluhu</span>, pokud částka nepřesahuje 10&nbsp;000&nbsp;Kč.</li>
+                                            <li class="lp-case__column__cell textXS">Úhrada měsíční splátky úvěru
+                                                až&nbsp;po&nbsp;<span class="hdl5">dobu max.&nbsp;12&nbsp;měsíců</span>
+                                                u&nbsp;dluhu přesahujícího 10&nbsp;000&nbsp;Kč.</li>
                                         </ul>
 
-                                        <div class="lp-case--boxes">
-                                            <ul class="lp-case--column">
-                                                <li class="lp-case--column--cell hdl5">Ztráta zaměstnání / <br />Zrušení živnosti</li>
-                                                <li class="lp-case--column--cell textXS">Zaměstnanecký poměr, služební poměr či&nbsp;OSVČ.</li>
-                                                <li class="lp-case--column--cell textXS"><span class="hdl5">Okamžitá úhrada dluhu</span>, pokud částka nepřesahuje 10&nbsp;000&nbsp;Kč.</li>
-                                                <li class="lp-case--column--cell textXS">Úhrada měsíční splátky úvěru až&nbsp;po&nbsp;<span class="hdl5">dobu max.&nbsp;12&nbsp;měsíců</span> u&nbsp;dluhu přesahujícího 10&nbsp;000&nbsp;Kč.</li>
-                                            </ul>
+                                        <ul class="lp-case__column">
+                                            <li class="lp-case__column__cell hdl5">Pracovní <br />neschopnost</li>
+                                            <li class="lp-case__column__cell textXS">Pracovní neschopnost ze zdravotních
+                                                důvodů.</li>
+                                            <li class="lp-case__column__cell textXS"><span class="hdl5">Okamžitá úhrada
+                                                    dluhu</span>, pokud částka nepřesahuje 10&nbsp;000&nbsp;Kč.</li>
+                                            <li class="lp-case__column__cell textXS">Úhrada měsíční splátky úvěru
+                                                až&nbsp;po&nbsp;<span class="hdl5">dobu max.&nbsp;12&nbsp;měsíců</span>
+                                                u dluhu přesahujícího 10&nbsp;000&nbsp;Kč.</li>
+                                        </ul>
 
-                                            <ul class="lp-case--column">
-                                                <li class="lp-case--column--cell hdl5">Pracovní <br />neschopnost</li>
-                                                <li class="lp-case--column--cell textXS">Pracovní neschopnost ze zdravotních důvodů.</li>
-                                                <li class="lp-case--column--cell textXS"><span class="hdl5">Okamžitá úhrada dluhu</span>, pokud částka nepřesahuje 10&nbsp;000&nbsp;Kč.</li>
-                                                <li class="lp-case--column--cell textXS">Úhrada měsíční splátky úvěru až&nbsp;po&nbsp;<span class="hdl5">dobu max.&nbsp;12&nbsp;měsíců</span> u dluhu přesahujícího 10&nbsp;000&nbsp;Kč.</li>
-                                            </ul>
+                                        <ul class="lp-case__column">
+                                            <li class="lp-case__column__cell hdl5">Ošetřování <br />člena rodiny</li>
+                                            <li class="lp-case__column__cell textXS">Dlouhodobé onemocnění člena Vaší
+                                                domácnosti.</li>
+                                            <li class="lp-case__column__cell textXS"><span class="hdl5">Okamžitá úhrada
+                                                    dluhu</span>, pokud částka nepřesahuje 10&nbsp;000&nbsp;Kč.</li>
+                                            <li class="lp-case__column__cell textXS">Úhrada měsíční splátky úvěru
+                                                navýšená o úhradu za&nbsp;pojištění až&nbsp;po&nbsp;<span
+                                                    class="hdl5">dobu max.&nbsp;12&nbsp;měsíců</span> u&nbsp;dluhu
+                                                přesahujícího 10&nbsp;000&nbsp;Kč.</li>
+                                        </ul>
 
-                                            <ul class="lp-case--column">
-                                                <li class="lp-case--column--cell hdl5">Ošetřování <br />člena rodiny</li>
-                                                <li class="lp-case--column--cell textXS">Dlouhodobé onemocnění člena Vaší domácnosti.</li>
-                                                <li class="lp-case--column--cell textXS"><span class="hdl5">Okamžitá úhrada dluhu</span>, pokud částka nepřesahuje 10&nbsp;000&nbsp;Kč.</li>
-                                                <li class="lp-case--column--cell textXS">Úhrada měsíční splátky úvěru navýšená o úhradu za&nbsp;pojištění až&nbsp;po&nbsp;<span class="hdl5">dobu max.&nbsp;12&nbsp;měsíců</span> u&nbsp;dluhu přesahujícího 10&nbsp;000&nbsp;Kč.</li>
-                                            </ul>
-
-                                            <ul class="lp-case--column">
-                                                <li class="lp-case--column--cell hdl5">
-                                                    <span>Invalidita<br />(II. a III. stupeň)</span>
-                                                    <span>Úmrtí</span>
-                                                </li>
-                                                <li class="lp-case--column--cell textXS">Invalidita II. a III. stupně <br />nebo úmrtí.</li>
-                                                <li class="lp-case--column--cell textXS">Jednorázová úhrada dluhu (max. do 2 milionů Kč).</li>
-                                            </ul>
-                                        </div>
+                                        <ul class="lp-case__column">
+                                            <li class="lp-case__column__cell hdl5">
+                                                <span>Invalidita<br />(II. a III. stupeň)</span>
+                                                <span>Úmrtí</span>
+                                            </li>
+                                            <li class="lp-case__column__cell textXS">Invalidita II. a III. stupně
+                                                <br />nebo úmrtí.</li>
+                                            <li class="lp-case__column__cell textXS">Jednorázová úhrada dluhu (max. do 2
+                                                milionů Kč).</li>
+                                        </ul>
                                     </div>
-
-                                    <p class="lp-case--conditions textS">Více o pojištění schopnosti splácet naleznete <a href="https://www.hellobank.cz/dalsi-produkty/vsechna-pojisteni/pojisteni-schopnosti-splacet-uver/" target="_blank">zde</a>.</p>
                                 </div>
 
-                                <a class="lp-case--toggle--button textS" id="toggleButton">Více informací &gt; </a>
-                            </div>
-                        </section>
-
-                        <!-- purchase -->
-                        <section class="lp-purchase">
-                            <div class="lp-purchase--caption">
-                                <h3 class="hdl3">Jak si pojištění koupit?</h3>
-
-                                <p class="textS">Je to snadné – pojištění si sjednáte společně s&nbsp;žádostí o&nbsp;nákup na&nbsp;splátky. Částka k&nbsp;úhradě pak bude zahrnuta v&nbsp;měsíční splátce úvěru. Cena za&nbsp;pojištění bude rozdělena do&nbsp;měsíčních splátek, takže nezatíží vaši peněženku.</p>
-
-                                <p class="textS">Jak nakupovat na&nbsp;splátky na <span class="hdl4">Alza.cz</span>? Všechny informace najdete na&nbsp;stránce o&nbsp;<a href="https://www.alza.cz/splatky">Splátkovém&nbsp;prodeji</a>.</p>
+                                <p class="lp-case__conditions textS">Více o pojištění schopnosti splácet naleznete <a
+                                        href="https://www.hellobank.cz/dalsi-produkty/vsechna-pojisteni/pojisteni-schopnosti-splacet-uver/"
+                                        target="_blank">zde</a>.</p>
                             </div>
 
-                            <div class="lp-purchase--icons">
-                                <div class="lp-purchase--unit">
-                                    <svg class="icon">
-                                        <use xlink:href="#purchase"></use>
+                            <a class="lp-case__toggle__button textS" id="toggleButton">Více informací &gt; </a>
+                        </div>
+                    </section>
+
+                    <!-- purchase -->
+                    <section class="lp-purchase">
+                        <div class="lp-purchase__caption">
+                            <h3 class="hdl3">Jak si pojištění koupit?</h3>
+
+                            <p class="textS">Je to snadné – pojištění si sjednáte společně s&nbsp;žádostí o&nbsp;nákup
+                                na&nbsp;splátky. Částka k&nbsp;úhradě pak bude zahrnuta v&nbsp;měsíční splátce úvěru.
+                                Cena za&nbsp;pojištění bude rozdělena do&nbsp;měsíčních splátek, takže nezatíží vaši
+                                peněženku.</p>
+
+                            <p class="textS">Jak nakupovat na&nbsp;splátky na <span class="hdl4">Alza.cz</span>? Všechny
+                                informace najdete na&nbsp;stránce o&nbsp;<a
+                                    href="https://www.alza.cz/splatky">Splátkovém&nbsp;prodeji</a>.</p>
+                        </div>
+
+                        <div class="lp-purchase__icons">
+                            <div class="lp-purchase__unit">
+                                <svg class="icon">
+                                    <use xlink:href="#purchase"></use>
+                                </svg>
+
+                                <h4 class="hdl4">Nákup zboží na&nbsp;splátky</h4>
+
+                                <p class="textS">Vyberte si zboží, zvolte <span class="hdl4">Nákup
+                                        na&nbsp;splátky</span> a&nbsp;ve&nbsp;splátkové kalkulačce vyberte <span
+                                        class="hdl4">Úvěr s&nbsp;pojištěním</span>.</p>
+                            </div>
+                            <div class="lp-purchase__unit">
+                                <svg class="icon">
+                                    <use xlink:href="#event"></use>
+                                </svg>
+
+                                <h4 class="hdl4">Jak nahlásit událost?</h4>
+
+                                <p class="textS">Zavolejte na telefonní číslo <a class="hdl4"
+                                        href="tel:+420234240234">+420&nbsp;234&nbsp;240&nbsp;234</a>, kde vám pomohou
+                                    s&nbsp;nahlášením vaší události.</p>
+                            </div>
+                            <div class="lp-purchase__unit">
+                                <svg class="icon">
+                                    <use xlink:href="#payout"></use>
+                                </svg>
+
+                                <h4 class="hdl4">Vyplacení pojistného plnění</h4>
+
+                                <p class="textS">Vaši pojistnou událost vyřešíme <span
+                                        class="hdl4">co&nbsp;nejrychleji.</span> O&nbsp;průběhu vás budeme samozřejmě
+                                    informovat.</p>
+                            </div>
+                        </div>
+
+                        <img src="https://cdn.alza.cz/Foto/or/lp/pojisteni-schopnosti-splacet/img/screen.webp" alt="návod k zakoupení pojištění v průběhu nákupu" height="954" width="852" class="lp-purchase__screen" srcset="https://cdn.alza.cz/Foto/or/lp/pojisteni-schopnosti-splacet/img/screen.webp, https://cdn.alza.cz/Foto/or/lp/pojisteni-schopnosti-splacet/img/screen@2x.webp 2x" />
+
+                        <img src="https://cdn.alza.cz/Foto/or/lp/pojisteni-schopnosti-splacet/img/purchase_cutout.png" alt="pojištění schopnosti splácet" height="513" width="418" class="lp-purchase__backdrop" srcset="https://cdn.alza.cz/Foto/or/lp/pojisteni-schopnosti-splacet/img/purchase_cutout.png, https://cdn.alza.cz/Foto/or/lp/pojisteni-schopnosti-splacet/img/purchase_cutout@2x.png 2x" />
+                    </section>
+
+                    <!-- faq -->
+                    <section class="lp-faq">
+                        <div class="lp-faq__caption">
+                            <h3 class="hdl3">Často kladené dotazy</h3>
+
+                            <p class="textS">Pokud Vám ještě není něco jasné, zkontrolujte nejčastěji kladené dotazy.
+                            </p>
+                        </div>
+
+                        <div class="lp-faq__units">
+                            <div class="lp-faq__box">
+                                <div class="lp-faq__box--handle">
+                                    <svg class="lp-faq__box__icon">
+                                        <use xlink:href="#arrow"></use>
                                     </svg>
 
-                                    <h4 class="hdl4">Nákup zboží na&nbsp;splátky</h4>
-
-                                    <p class="textS">Vyberte si zboží, zvolte <span class="hdl4">Nákup na&nbsp;splátky</span> a&nbsp;ve&nbsp;splátkové kalkulačce vyberte <span class="hdl4">Úvěr s&nbsp;pojištěním</span>.</p>
+                                    <h4 class="hdl4">Jaké jsou podmínky vstupu do&nbsp;tohoto pojištění?</h4>
                                 </div>
-                                <div class="lp-purchase--unit">
-                                    <svg class="icon">
-                                        <use xlink:href="#event"></use>
+                                <div class="lp-faq__box--content">
+                                    <p class="textS">Být mladší 75 let a&nbsp;nebýt invalidní.</p>
+                                </div>
+                            </div>
+
+                            <div class="lp-faq__box">
+                                <div class="lp-faq__box--handle">
+                                    <svg class="lp-faq__box__icon">
+                                        <use xlink:href="#arrow"></use>
                                     </svg>
 
-                                    <h4 class="hdl4">Jak nahlásit událost?</h4>
-
-                                    <p class="textS">Zavolejte na telefonní číslo <a class="hdl4" href="tel:+420234240234">+420&nbsp;234&nbsp;240&nbsp;234</a>, kde vám pomohou s&nbsp;nahlášením vaší události.</p>
+                                    <h4 class="hdl4">Můžu přestat hradit splátky, pokud jsem již nahlásil škodní
+                                        událost?</h4>
                                 </div>
-                                <div class="lp-purchase--unit">
-                                    <svg class="icon">
-                                        <use xlink:href="#payout"></use>
+                                <div class="lp-faq__box--content">
+                                    <p class="textS">Svoje závazky hradíte nadále, a to i&nbsp;do&nbsp;případného
+                                        kladného rozhodnutí pojišťovny. Ta vám následně peníze vyplácí zpětně.</p>
+                                </div>
+                            </div>
+
+                            <div class="lp-faq__box">
+                                <div class="lp-faq__box--handle">
+                                    <svg class="lp-faq__box__icon">
+                                        <use xlink:href="#arrow"></use>
                                     </svg>
 
-                                    <h4 class="hdl4">Vyplacení pojistného plnění</h4>
-
-                                    <p class="textS">Vaši pojistnou událost vyřešíme <span class="hdl4">co&nbsp;nejrychleji.</span> O&nbsp;průběhu vás budeme samozřejmě informovat.</p>
+                                    <h4 class="hdl4">Může se pojistit i&nbsp;starobní důchodce, který stále vykonává
+                                        pracovní činnost?</h4>
+                                </div>
+                                <div class="lp-faq__box--content">
+                                    <p class="textS">Ano, ovšem místo rizika invalidity III.&nbsp;stupně je tento klient
+                                        automaticky pojištěn pro případ vydání průkazu ZTP/P.</p>
                                 </div>
                             </div>
+                        </div>
 
-                            <img src="https://i.alza.cz/Foto/or/lp/pojisteni-schopnosti-splacet/img/screen.png" alt="návod k zakoupení pojištění v průběhu nákupu" height="846" width="1066" class="lp-purchase--screen" srcset="https://i.alza.cz/Foto/or/lp/pojisteni-schopnosti-splacet/img/screen.png, https://i.alza.cz/Foto/or/lp/pojisteni-schopnosti-splacet/img/screen@2x.png 2x" />
+                        <a class="lp-faq__link textS"
+                            href="https://www.alza.cz/odpovedi-na-casto-kladene-dotazy-o-splatkach-art3343.htm">Máte
+                            další otázky?</a>
+                    </section>
 
-                            <img src="https://i.alza.cz/Foto/or/lp/pojisteni-schopnosti-splacet/img/purchase_cutout.png" alt="pojištění schopnosti splácet" height="513" width="418" class="lp-purchase--backdrop" srcset="https://i.alza.cz/Foto/or/lp/pojisteni-schopnosti-splacet/img/purchase_cutout.png, https://i.alza.cz/Foto/or/lp/pojisteni-schopnosti-splacet/img/purchase_cutout@2x.png 2x" />
-                        </section>
-
-                        <!-- faq -->
-                        <section class="lp-faq">
-                            <div class="lp-faq--caption">
-                                <h3 class="hdl3">Často kladené dotazy</h3>
-
-                                <p class="textS">Pokud Vám ještě není něco jasné, zkontrolujte nejčastěji kladené dotazy.</p>
-                            </div>
-
-                            <div class="lp-faq--units">
-                                <div class="lp-faq--box">
-                                    <div class="lp-faq--box__handle">
-                                        <svg class="lp-faq--box--icon">
-                                            <use xlink:href="#arrow"></use>
-                                        </svg>
-
-                                        <h4 class="hdl4">Jaké jsou podmínky vstupu do&nbsp;tohoto pojištění?</h4>
-                                    </div>
-                                    <div class="lp-faq--box__content">
-                                        <p class="textS">Být mladší 75 let a&nbsp;nebýt invalidní.</p>
-                                    </div>
-                                </div>
-
-                                <div class="lp-faq--box">
-                                    <div class="lp-faq--box__handle">
-                                        <svg class="lp-faq--box--icon">
-                                            <use xlink:href="#arrow"></use>
-                                        </svg>
-
-                                        <h4 class="hdl4">Můžu přestat hradit splátky, pokud jsem již nahlásil škodní událost?</h4>
-                                    </div>
-                                    <div class="lp-faq--box__content">
-                                        <p class="textS">Svoje závazky hradíte nadále, a to i&nbsp;do&nbsp;případného kladného rozhodnutí pojišťovny. Ta vám následně peníze vyplácí zpětně.</p>
-                                    </div>
-                                </div>
-
-                                <div class="lp-faq--box">
-                                    <div class="lp-faq--box__handle">
-                                        <svg class="lp-faq--box--icon">
-                                            <use xlink:href="#arrow"></use>
-                                        </svg>
-
-                                        <h4 class="hdl4">Může se pojistit i&nbsp;starobní důchodce, který stále vykonává pracovní činnost?</h4>
-                                    </div>
-                                    <div class="lp-faq--box__content">
-                                        <p class="textS">Ano, ovšem místo rizika invalidity III.&nbsp;stupně je tento klient automaticky pojištěn pro případ vydání průkazu ZTP/P.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <a class="lp-faq--link textS" href="https://www.alza.cz/odpovedi-na-casto-kladene-dotazy-o-splatkach-art3343.htm">Máte další otázky?</a>
-                        </section>
-
-                        <!--svgs -->
-                        <svg width="0" height="0" class="hidden">
-                            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="care">
-                                <rect width="64" height="64" fill="none"></rect>
-                                <circle cx="32" cy="32" r="32" fill="#40bfef" opacity="0.12"></circle>
-                                <g transform="translate(7.386 5.802)">
-                                    <path d="M27.7,152.624a31.668,31.668,0,0,1,19.112-4.813c4.861.28,12.43-1.744,16.634-6.242,3.331-3.561-.525-6.842-4.394-4.2-6.925,4.728-10.4,4.269-16.761,2.837" transform="translate(-21.111 -100.228)" fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-                                    <path d="M14.373,140.767a25.069,25.069,0,0,1,7.879.066c5.79,1.094,6.5-4.648,1.077-5.6-4.708-.824-10.737-2.7-15.834,3.1-.893,1.019-3.995,4.19-3.995,4.19" transform="translate(-3.5 -98.676)" fill="#e8f7fd" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-                                    <path d="M61.171,3.5A31.659,31.659,0,0,1,42.06,8.313c-4.86-.278-12.431,1.744-16.636,6.241-3.331,3.562.524,6.843,4.395,4.2,6.923-4.727,10.4-4.267,16.759-2.835" transform="translate(-18.533 -3.5)" fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-                                    <path d="M110.566,36.671a25.031,25.031,0,0,1-7.877-.067c-5.79-1.092-6.5,4.647-1.077,5.6,4.708.828,10.738,2.706,15.835-3.1.891-1.017,4-4.186,4-4.186" transform="translate(-72.215 -26.366)" fill="#e8f7fd" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-                                    <path d="M78.369,79.867a5.982,5.982,0,1,0-8.9-7.979,5.981,5.981,0,1,0-8.894,7.984c.216.218.77.714,1.015.9l8.051,7.1,7.985-7.322c.176-.143.745-.682.745-.682Z" transform="translate(-43.801 -51.689)" fill="#212121"></path>
+                    <!--svgs -->
+                    <svg width="0" height="0" class="hidden">
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="care">
+                            <rect width="64" height="64" fill="none"></rect>
+                            <circle cx="32" cy="32" r="32" fill="#40bfef" opacity="0.12"></circle>
+                            <g transform="translate(7.386 5.802)">
+                                <path
+                                    d="M27.7,152.624a31.668,31.668,0,0,1,19.112-4.813c4.861.28,12.43-1.744,16.634-6.242,3.331-3.561-.525-6.842-4.394-4.2-6.925,4.728-10.4,4.269-16.761,2.837"
+                                    transform="translate(-21.111 -100.228)" fill="none" stroke="#212121"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                <path
+                                    d="M14.373,140.767a25.069,25.069,0,0,1,7.879.066c5.79,1.094,6.5-4.648,1.077-5.6-4.708-.824-10.737-2.7-15.834,3.1-.893,1.019-3.995,4.19-3.995,4.19"
+                                    transform="translate(-3.5 -98.676)" fill="#e8f7fd" stroke="#212121"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                <path
+                                    d="M61.171,3.5A31.659,31.659,0,0,1,42.06,8.313c-4.86-.278-12.431,1.744-16.636,6.241-3.331,3.562.524,6.843,4.395,4.2,6.923-4.727,10.4-4.267,16.759-2.835"
+                                    transform="translate(-18.533 -3.5)" fill="none" stroke="#212121"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                <path
+                                    d="M110.566,36.671a25.031,25.031,0,0,1-7.877-.067c-5.79-1.092-6.5,4.647-1.077,5.6,4.708.828,10.738,2.706,15.835-3.1.891-1.017,4-4.186,4-4.186"
+                                    transform="translate(-72.215 -26.366)" fill="#e8f7fd" stroke="#212121"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                <path
+                                    d="M78.369,79.867a5.982,5.982,0,1,0-8.9-7.979,5.981,5.981,0,1,0-8.894,7.984c.216.218.77.714,1.015.9l8.051,7.1,7.985-7.322c.176-.143.745-.682.745-.682Z"
+                                    transform="translate(-43.801 -51.689)" fill="#212121"></path>
+                            </g>
+                        </symbol>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="death">
+                            <rect width="64" height="64" fill="none"></rect>
+                            <circle cx="32" cy="32" r="32" fill="#40bfef" opacity="0.12"></circle>
+                            <g transform="translate(16 11)">
+                                <rect width="32" height="5" transform="translate(0 35)" fill="none" stroke="#212121"
+                                    stroke-linejoin="round" stroke-width="2"></rect>
+                                <path d="M18,1A13.063,13.063,0,0,0,5,14.125V36H31V14.125A13.063,13.063,0,0,0,18,1Z"
+                                    transform="translate(-2 -1)" fill="none" stroke="#212121" stroke-miterlimit="10"
+                                    stroke-width="2"></path>
+                                <path d="M28,16.636H23.714V13H20.286v3.636H16v2.909h4.286V29h3.429V19.545H28Z"
+                                    transform="translate(-6 -5)" fill="none" stroke="#212121" stroke-linejoin="round"
+                                    stroke-width="1.5"></path>
+                            </g>
+                        </symbol>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="event">
+                            <g transform="translate(-798 -1844)">
+                                <rect width="64" height="64" transform="translate(798 1844)" fill="none"></rect>
+                                <g transform="translate(562.937 1827.679)">
+                                    <path
+                                        d="M285.179,63.549a2.511,2.511,0,0,0-2.285,1.456V63.5A2.6,2.6,0,0,0,277.8,62.8c0-1.905-.894-3.154-2.591-3.154a2.593,2.593,0,0,0-2.56,2.172V51.173a2.6,2.6,0,0,0-5.19,0v16.5c-1.6-3.037-3.431-4.3-5.056-4.3h-.047a3.622,3.622,0,0,0-2.978,1.5c-.452,1,3.238,2.637,5.853,9.1,2.832,6.984,5.128,10.5,12.056,10.5,7.589,0,10.419-5.313,10.419-8.737V66.076A2.525,2.525,0,0,0,285.179,63.549Z"
+                                        transform="translate(-2.446 -6.893)" fill="none" stroke="#011520"
+                                        stroke-linejoin="round" stroke-width="2"></path>
+                                    <path
+                                        d="M290.331,48.493a2.2,2.2,0,0,0-2.062-1.394,2.1,2.1,0,0,0-.831.166l-2.38,1.041a2.314,2.314,0,0,0-1.189,2.991,2.2,2.2,0,0,0,2.061,1.393,2.088,2.088,0,0,0,.832-.169l2.38-1.039A2.311,2.311,0,0,0,290.331,48.493Z"
+                                        transform="translate(-8.135 -6.547)" fill="none" stroke="#011520"
+                                        stroke-miterlimit="10" stroke-width="2"></path>
+                                    <path
+                                        d="M286.893,59.527l2.153-.94a2.09,2.09,0,0,0,1.075-2.7,1.986,1.986,0,0,0-1.862-1.262,1.911,1.911,0,0,0-.753.151l-2.153.94a2.092,2.092,0,0,0-1.074,2.7,1.986,1.986,0,0,0,1.865,1.261A1.882,1.882,0,0,0,286.893,59.527Z"
+                                        transform="translate(-8.234 -8.304)" fill="none" stroke="#011520"
+                                        stroke-miterlimit="10" stroke-width="2"></path>
+                                    <path
+                                        d="M283.883,43.9a2.2,2.2,0,0,0,2.062,1.393,2.087,2.087,0,0,0,.831-.166l1.613-.737a2.312,2.312,0,0,0,1.19-2.99,2.2,2.2,0,0,0-2.062-1.4,2.07,2.07,0,0,0-.832.169l-1.613.737A2.312,2.312,0,0,0,283.883,43.9Z"
+                                        transform="translate(-8.138 -4.889)" fill="none" stroke="#011520"
+                                        stroke-miterlimit="10" stroke-width="2"></path>
+                                    <line x2="1.679" transform="translate(266.913 21.821)" fill="none" stroke="#011520"
+                                        stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"></line>
+                                    <line x2="20.325" transform="translate(257.59 24.379)" fill="none" stroke="#011520"
+                                        stroke-miterlimit="10" stroke-width="2"></line>
+                                    <path
+                                        d="M286.767,35.214l4.345-1.859a2.612,2.612,0,0,0,1.343-3.379,2.23,2.23,0,0,0-2.94-1.389c-.392.113-2.232.763-2.748.98"
+                                        transform="translate(-8.851 -2.193)" fill="none" stroke="#011520"
+                                        stroke-miterlimit="10" stroke-width="2"></path>
+                                    <path d="M282.712,63.612l.6-.057c1.292-.2,2.695-1.078,2.695-2.348"
+                                        transform="translate(-7.904 -9.842)" fill="none" stroke="#011520"
+                                        stroke-miterlimit="10" stroke-width="2"></path>
+                                    <path
+                                        d="M280.574,35.568V22.154a2.676,2.676,0,0,0-2.228-2.683c-2.862-.269-5.39-.405-7.927-.405s-5.076.136-7.967.41a2.671,2.671,0,0,0-2.2,2.679v28.82a2.671,2.671,0,0,0,2.229,2.681c1.768.169,3.487.284,5.194.349"
+                                        transform="translate(-2.658 0)" fill="none" stroke="#011520"
+                                        stroke-miterlimit="10" stroke-width="2"></path>
+                                    <line x2="6.244" transform="translate(270.203 47.885)" fill="none" stroke="#011520"
+                                        stroke-miterlimit="10" stroke-width="2"></line>
+                                    <line x2="7.422" transform="translate(257.59 47.885)" fill="none" stroke="#011520"
+                                        stroke-miterlimit="10" stroke-width="2"></line>
+                                    <path
+                                        d="M257.59,28.577c-.882-2.646-4.214-3.233-5.161-2.67-1.083.645,1.317,4.754-1.261,12.371a39.012,39.012,0,0,0-2.258,8.811A11.844,11.844,0,0,0,256.9,59.635"
+                                        transform="translate(0 -1.552)" fill="none" stroke="#011520"
+                                        stroke-miterlimit="10" stroke-width="2"></path>
                                 </g>
-                            </symbol>
-                            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="death">
-                                <rect width="64" height="64" fill="none"></rect>
-                                <circle cx="32" cy="32" r="32" fill="#40bfef" opacity="0.12"></circle>
-                                <g transform="translate(16 11)">
-                                    <rect width="32" height="5" transform="translate(0 35)" fill="none" stroke="#212121" stroke-linejoin="round" stroke-width="2"></rect>
-                                    <path d="M18,1A13.063,13.063,0,0,0,5,14.125V36H31V14.125A13.063,13.063,0,0,0,18,1Z" transform="translate(-2 -1)" fill="none" stroke="#212121" stroke-miterlimit="10" stroke-width="2"></path>
-                                    <path d="M28,16.636H23.714V13H20.286v3.636H16v2.909h4.286V29h3.429V19.545H28Z" transform="translate(-6 -5)" fill="none" stroke="#212121" stroke-linejoin="round" stroke-width="1.5"></path>
+                            </g>
+                        </symbol>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="handicap">
+                            <rect width="64" height="64" fill="none"></rect>
+                            <circle cx="32" cy="32" r="32" fill="#40bfef" opacity="0.12"></circle>
+                            <g transform="translate(9 9)">
+                                <circle cx="23" cy="23" r="23" fill="none" stroke="#212121" stroke-linecap="round"
+                                    stroke-miterlimit="10" stroke-width="2"></circle>
+                                <path d="M16.667,26.629A9.772,9.772,0,1,0,31.555,38.547"
+                                    transform="translate(-3.029 -5.56)" fill="none" stroke="#212121"
+                                    stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"></path>
+                                <path d="M23,12V26.657H33.586l4.886,10.586h3.257" transform="translate(-4.886 -2.843)"
+                                    fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"></path>
+                                <line x1="8" transform="translate(18 18)" fill="none" stroke="#212121"
+                                    stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"></line>
+                                <path d="M25.514,12.257A3.257,3.257,0,1,1,22.257,9a3.257,3.257,0,0,1,3.257,3.257"
+                                    transform="translate(-4.143 -2.286)" fill="#212121"></path>
+                            </g>
+                        </symbol>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="illness">
+                            <rect width="64" height="64" fill="rgba(255,255,255,0)"></rect>
+                            <circle cx="32" cy="32" r="32" fill="#40bfef" opacity="0.12"></circle>
+                            <g transform="translate(9.137 8.243)">
+                                <line x1="2.137" transform="translate(0 9.849)" fill="none" stroke="#212121"
+                                    stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"></line>
+                                <line x1="2.137" transform="translate(0 15.548)" fill="none" stroke="#212121"
+                                    stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"></line>
+                                <line x1="2.137" transform="translate(0 21.96)" fill="none" stroke="#212121"
+                                    stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"></line>
+                                <line x1="2.137" transform="translate(0 27.659)" fill="none" stroke="#212121"
+                                    stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"></line>
+                                <circle cx="2.137" cy="2.137" r="2.137" transform="translate(7.124 33.358)"
+                                    fill="#212121"></circle>
+                                <line y2="19.947" transform="translate(9.261 15.548)" fill="none" stroke="#212121"
+                                    stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"></line>
+                                <path d="M293.919,378.77v-21.8a2.97,2.97,0,0,0-5.939,0v21.8a4.95,4.95,0,1,0,5.939,0Z"
+                                    transform="translate(-281.85 -347.071)" fill="none" stroke="#212121"
+                                    stroke-linejoin="round" stroke-width="2"></path>
+                                <path d="M325.98,354c0,1.98-1.98,1.98-1.98,3.96s1.98,1.98,1.98,3.96-1.98,1.98-1.98,3.96"
+                                    transform="translate(-282.235 -347.071)" fill="none" stroke="#212121"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                <path d="M319.98,354c0,1.98-1.98,1.98-1.98,3.96s1.98,1.98,1.98,3.96-1.98,1.98-1.98,3.96"
+                                    transform="translate(-282.174 -347.071)" fill="none" stroke="#212121"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                <path d="M313.98,354c0,1.98-1.98,1.98-1.98,3.96s1.98,1.98,1.98,3.96-1.98,1.98-1.98,3.96"
+                                    transform="translate(-282.113 -347.071)" fill="none" stroke="#212121"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                <path
+                                    d="M327.727,347.2a24.137,24.137,0,0,0-3-.2c-15.235,0-20.762,7.981-20.762,17,0,2.176,3.238,3.537-2.026,9.786a2.8,2.8,0,0,0-.943,2.118,2.114,2.114,0,0,0,1.282,1.93,11.223,11.223,0,0,0,3.023.556,7.22,7.22,0,0,1-.672,1.965c-.374.727-.291,1.438.412,1.723.4.16.636.272.636.272a1.124,1.124,0,0,0-.472,1.16c.159.763,1.406,1,1.669,1.76.327.943.062,1.984.062,3.447,0,1.792,1.683,2.823,3.754,2.823s8.125-1.98,8.125-1.98l.99,4.949"
+                                    transform="translate(-282.002 -347)" fill="none" stroke="#212121"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                            </g>
+                        </symbol>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="job">
+                            <rect width="64" height="64" fill="none"></rect>
+                            <circle cx="32" cy="32" r="32" fill="#40bfef" opacity="0.12"></circle>
+                            <g transform="translate(0.901 8.031)">
+                                <path
+                                    d="M13.549,33.712c1.344,2.785,3.494,7.23,4.758,9.8a4.638,4.638,0,0,0,4.258,2.936H35.544c2.515,0,3.985-1.226,3.985-3.5a3.123,3.123,0,0,0-2.272-3.321L25.939,38.447,21.383,27.73c-1.867-4.6-5.146-6.583-8.71-6.583-4.89,0-8.584,2.861-9.615,9.387L1,45.227H15.892"
+                                    transform="translate(0.022 0.463)" fill="none" stroke="#212121"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                <circle cx="8.841" cy="8.841" r="8.841" transform="translate(8.267 1.022)" fill="none"
+                                    stroke="#212121" stroke-linejoin="round" stroke-width="2"></circle>
+                                <path d="M60.458,36.444,32.749,29.958V7.057l27.708,5.589Z"
+                                    transform="translate(0.718 0.155)" fill="none" stroke="#212121"
+                                    stroke-linejoin="round" stroke-width="2"></path>
+                                <path
+                                    d="M40.278,18.861a2.733,2.733,0,0,1-.188,1.05,1.7,1.7,0,0,1-.552.726,1.938,1.938,0,0,1-.9.351,3.626,3.626,0,0,1-1.252-.075,4.711,4.711,0,0,1-1.012-.338,5.015,5.015,0,0,1-.85-.487V18.538a3.008,3.008,0,0,0,.379.334,4.345,4.345,0,0,0,.464.3,4.253,4.253,0,0,0,.511.245,3.16,3.16,0,0,0,.511.157,1.309,1.309,0,0,0,.445.016.812.812,0,0,0,.409-.173,1.03,1.03,0,0,0,.3-.413,1.808,1.808,0,0,0,.117-.705V13.891l-3.066-.652v-1.32l4.688,1Zm9.161.211a6,6,0,0,1-.269,1.934,2.938,2.938,0,0,1-.74,1.218,2.223,2.223,0,0,1-1.1.564,3.367,3.367,0,0,1-1.353-.031,3.8,3.8,0,0,1-2.516-1.647,6.124,6.124,0,0,1-.843-3.413,5.994,5.994,0,0,1,.273-1.933,2.948,2.948,0,0,1,.735-1.217,2.213,2.213,0,0,1,1.1-.564,3.342,3.342,0,0,1,1.352.028A3.8,3.8,0,0,1,48.6,15.654a6.106,6.106,0,0,1,.842,3.416Zm-1.686-.281a5.413,5.413,0,0,0-.4-2.334,1.813,1.813,0,0,0-1.323-1.021,1.4,1.4,0,0,0-.785.025,1.088,1.088,0,0,0-.535.447,2.35,2.35,0,0,0-.307.847,6.75,6.75,0,0,0-.1,1.22,5.362,5.362,0,0,0,.409,2.335,1.812,1.812,0,0,0,1.32,1.021,1.416,1.416,0,0,0,.788-.024,1.075,1.075,0,0,0,.535-.45,2.391,2.391,0,0,0,.307-.846,6.771,6.771,0,0,0,.1-1.221Zm3.427,4.925V15.233l2.738.581a4.578,4.578,0,0,1,2.17.973,2.171,2.171,0,0,1,.724,1.686,2.4,2.4,0,0,1-.075.6,1.539,1.539,0,0,1-.23.506,1.339,1.339,0,0,1-.389.365,1.385,1.385,0,0,1-.552.189,2.487,2.487,0,0,1,.607.333,2.387,2.387,0,0,1,.854,1.152,2.3,2.3,0,0,1,.127.766,1.822,1.822,0,0,1-.878,1.758,3.769,3.769,0,0,1-2.508.119ZM55.152,18.4a1.3,1.3,0,0,0-.078-.451,1.048,1.048,0,0,0-.249-.384,1.625,1.625,0,0,0-.441-.3,2.83,2.83,0,0,0-.652-.214l-.967-.205v2.248l.967.205a1.955,1.955,0,0,0,.658.046.927.927,0,0,0,.441-.166.717.717,0,0,0,.246-.327,1.246,1.246,0,0,0,.075-.449m-1.273,4.587a2.057,2.057,0,0,0,.671.041,1.109,1.109,0,0,0,.483-.167.837.837,0,0,0,.3-.345,1.1,1.1,0,0,0,.1-.478,1.276,1.276,0,0,0-.409-.949,2.535,2.535,0,0,0-1.262-.575l-.992-.211v2.445Z"
+                                    transform="translate(0.778 0.261)" fill="#212121"></path>
+                                <path d="M55.133,30.016l-5.384-1.533V26.95l5.384,1.533Z"
+                                    transform="translate(1.09 0.59)" fill="none" stroke="#0094e7"
+                                    stroke-linejoin="round" stroke-width="2"></path>
+                                <path d="M30.138,38.635l-2.657-.641,8.225-3.787,21.606,5.2L49.087,43.19,38.443,40.635"
+                                    transform="translate(0.602 0.749)" fill="none" stroke="#212121"
+                                    stroke-linejoin="round" stroke-width="2"></path>
+                                <line y2="4.236" transform="translate(43.12 32.364)" fill="none" stroke="#212121"
+                                    stroke-linejoin="round" stroke-width="2"></line>
+                                <line y2="4.236" transform="translate(48.441 33.649)" fill="none" stroke="#212121"
+                                    stroke-linejoin="round" stroke-width="2"></line>
+                                <rect width="62.198" height="47.938" fill="none"></rect>
+                            </g>
+                        </symbol>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="payout">
+                            <g transform="translate(-1496 -2168)">
+                                <rect width="64" height="64" transform="translate(1496 2168)" fill="none"></rect>
+                                <g transform="translate(1375.639 1823.568)">
+                                    <path
+                                        d="M176.481,398.225l-6.192,2.571a2.547,2.547,0,0,1-2.921-1.849,2.4,2.4,0,0,1,1.224-3.161l13.447-6.03a5.186,5.186,0,0,1,3.17.12l7.5,1.411-1.251,8.45-4.63,1.122a38.293,38.293,0,0,0-6.92,3.862,13.911,13.911,0,0,1-1.991.9l-8.765,2.657a1.286,1.286,0,0,1-1.171-.193s-6.253-4.236-8.39-5.755a1.658,1.658,0,0,1,.888-2.825,1.406,1.406,0,0,1,2.2-1.1l5.1,3.426Z"
+                                        transform="translate(-9.635 -9.215)" fill="none" stroke="#212121"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                    <path
+                                        d="M139.8,389.3c-.247,1.905,1.806,3.118,3.007,3.124l1.748-2.511a4.092,4.092,0,0,0,2.219,1.266l1.979-3.788"
+                                        transform="translate(-4.664 -8.656)" fill="none" stroke="#212121"
+                                        stroke-linejoin="round" stroke-width="2"></path>
+                                    <path
+                                        d="M151,363.748l-11.566.516-10.719,6.548-3.184-.094-3.887,9.623,8.4,3.369a5.279,5.279,0,0,0,4.349-.127l7.06-3.279,8.663-2.9a2.5,2.5,0,0,0,1.338-3.351c-.588-1.705-1.758-2.236-2.909-1.915l-8.638,2.79,2.346-5.475s4.275-.507,4.948-.582"
+                                        transform="translate(0 -2.575)" fill="none" stroke="#212121"
+                                        stroke-linejoin="round" stroke-width="2"></path>
+                                    <path d="M173.929,365.088l1.9-2.564-11.847-8.786-12.87,17.356"
+                                        transform="translate(-7.58)" fill="none" stroke="#212121"
+                                        stroke-linejoin="round" stroke-width="2"></path>
+                                    <path d="M153.714,371.62l11.353-12.5,10.918,9.917L159.3,387.412l-9.466-8.675"
+                                        transform="translate(-7.25 -1.385)" fill="none" stroke="#212121"
+                                        stroke-linejoin="round" stroke-width="2"></path>
+                                    <path d="M161.214,375.458a4.1,4.1,0,1,1,.28,3.227"
+                                        transform="translate(-10.179 -4.863)" fill="none" stroke="#212121"
+                                        stroke-linejoin="round" stroke-width="2"></path>
+                                    <path d="M172.356,362.713a3.966,3.966,0,0,1-5.6.27"
+                                        transform="translate(-11.604 -2.309)" fill="none" stroke="#212121"
+                                        stroke-linejoin="round" stroke-width="2"></path>
+                                    <path d="M180.844,368.985a3.966,3.966,0,0,0,.269,5.6"
+                                        transform="translate(-14.963 -3.922)" fill="none" stroke="#212121"
+                                        stroke-linejoin="round" stroke-width="2"></path>
+                                    <path d="M158.637,393.14a3.967,3.967,0,0,1,5.6-.268"
+                                        transform="translate(-9.516 -9.801)" fill="none" stroke="#212121"
+                                        stroke-linejoin="round" stroke-width="2"></path>
                                 </g>
-                            </symbol>
-                            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="event">
-                                <g transform="translate(-798 -1844)">
-                                    <rect width="64" height="64" transform="translate(798 1844)" fill="none"></rect>
-                                    <g transform="translate(562.937 1827.679)">
-                                        <path d="M285.179,63.549a2.511,2.511,0,0,0-2.285,1.456V63.5A2.6,2.6,0,0,0,277.8,62.8c0-1.905-.894-3.154-2.591-3.154a2.593,2.593,0,0,0-2.56,2.172V51.173a2.6,2.6,0,0,0-5.19,0v16.5c-1.6-3.037-3.431-4.3-5.056-4.3h-.047a3.622,3.622,0,0,0-2.978,1.5c-.452,1,3.238,2.637,5.853,9.1,2.832,6.984,5.128,10.5,12.056,10.5,7.589,0,10.419-5.313,10.419-8.737V66.076A2.525,2.525,0,0,0,285.179,63.549Z" transform="translate(-2.446 -6.893)" fill="none" stroke="#011520" stroke-linejoin="round" stroke-width="2"></path>
-                                        <path d="M290.331,48.493a2.2,2.2,0,0,0-2.062-1.394,2.1,2.1,0,0,0-.831.166l-2.38,1.041a2.314,2.314,0,0,0-1.189,2.991,2.2,2.2,0,0,0,2.061,1.393,2.088,2.088,0,0,0,.832-.169l2.38-1.039A2.311,2.311,0,0,0,290.331,48.493Z" transform="translate(-8.135 -6.547)" fill="none" stroke="#011520" stroke-miterlimit="10" stroke-width="2"></path>
-                                        <path d="M286.893,59.527l2.153-.94a2.09,2.09,0,0,0,1.075-2.7,1.986,1.986,0,0,0-1.862-1.262,1.911,1.911,0,0,0-.753.151l-2.153.94a2.092,2.092,0,0,0-1.074,2.7,1.986,1.986,0,0,0,1.865,1.261A1.882,1.882,0,0,0,286.893,59.527Z" transform="translate(-8.234 -8.304)" fill="none" stroke="#011520" stroke-miterlimit="10" stroke-width="2"></path>
-                                        <path d="M283.883,43.9a2.2,2.2,0,0,0,2.062,1.393,2.087,2.087,0,0,0,.831-.166l1.613-.737a2.312,2.312,0,0,0,1.19-2.99,2.2,2.2,0,0,0-2.062-1.4,2.07,2.07,0,0,0-.832.169l-1.613.737A2.312,2.312,0,0,0,283.883,43.9Z" transform="translate(-8.138 -4.889)" fill="none" stroke="#011520" stroke-miterlimit="10" stroke-width="2"></path>
-                                        <line x2="1.679" transform="translate(266.913 21.821)" fill="none" stroke="#011520" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"></line>
-                                        <line x2="20.325" transform="translate(257.59 24.379)" fill="none" stroke="#011520" stroke-miterlimit="10" stroke-width="2"></line>
-                                        <path d="M286.767,35.214l4.345-1.859a2.612,2.612,0,0,0,1.343-3.379,2.23,2.23,0,0,0-2.94-1.389c-.392.113-2.232.763-2.748.98" transform="translate(-8.851 -2.193)" fill="none" stroke="#011520" stroke-miterlimit="10" stroke-width="2"></path>
-                                        <path d="M282.712,63.612l.6-.057c1.292-.2,2.695-1.078,2.695-2.348" transform="translate(-7.904 -9.842)" fill="none" stroke="#011520" stroke-miterlimit="10" stroke-width="2"></path>
-                                        <path d="M280.574,35.568V22.154a2.676,2.676,0,0,0-2.228-2.683c-2.862-.269-5.39-.405-7.927-.405s-5.076.136-7.967.41a2.671,2.671,0,0,0-2.2,2.679v28.82a2.671,2.671,0,0,0,2.229,2.681c1.768.169,3.487.284,5.194.349" transform="translate(-2.658 0)" fill="none" stroke="#011520" stroke-miterlimit="10" stroke-width="2"></path>
-                                        <line x2="6.244" transform="translate(270.203 47.885)" fill="none" stroke="#011520" stroke-miterlimit="10" stroke-width="2"></line>
-                                        <line x2="7.422" transform="translate(257.59 47.885)" fill="none" stroke="#011520" stroke-miterlimit="10" stroke-width="2"></line>
-                                        <path d="M257.59,28.577c-.882-2.646-4.214-3.233-5.161-2.67-1.083.645,1.317,4.754-1.261,12.371a39.012,39.012,0,0,0-2.258,8.811A11.844,11.844,0,0,0,256.9,59.635" transform="translate(0 -1.552)" fill="none" stroke="#011520" stroke-miterlimit="10" stroke-width="2"></path>
-                                    </g>
+                            </g>
+                        </symbol>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="purchase">
+                            <g transform="translate(-1704 -1844)">
+                                <rect width="64" height="64" transform="translate(1704 1844)" fill="none"></rect>
+                                <g transform="translate(1465.127 1821.583)">
+                                    <path
+                                        d="M269.943,39.111l12.12.014h0a.474.474,0,0,0,.335-.81l-3.143-3.144a13.1,13.1,0,0,1,12.732-3.357.475.475,0,0,0,.485-.764c-3-3.564-6.738-5.527-10.542-5.527a12.618,12.618,0,0,0-8.66,3.662l-3.024-3.022a.474.474,0,0,0-.809.337l.03,12.138A.476.476,0,0,0,269.943,39.111Z"
+                                        transform="translate(-1.395 0)" fill="none" stroke="#011520"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                    <path d="M245.034,39.139h5.333l6.892,32.786h36.564l2.888-26.785H251.649"
+                                        transform="translate(0 -0.778)" fill="none" stroke="#011520"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                    <line x2="28.168" transform="translate(260.82 53.445)" fill="none" stroke="#011520"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></line>
+                                    <line x2="25.729" transform="translate(263.376 61.678)" fill="none" stroke="#011520"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></line>
+                                    <path d="M258.013,73.913v6.205h36.061" transform="translate(-0.742 -2.766)"
+                                        fill="none" stroke="#011520" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"></path>
+                                    <circle cx="2.979" cy="2.979" r="2.979" transform="translate(254.292 77.352)"
+                                        fill="none" stroke="#011520" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"></circle>
+                                    <path
+                                        d="M299.059,83.473a2.979,2.979,0,1,1-2.979-2.979A2.979,2.979,0,0,1,299.059,83.473Z"
+                                        transform="translate(-2.747 -3.142)" fill="none" stroke="#011520"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
                                 </g>
-                            </symbol>
-                            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="handicap">
-                                <rect width="64" height="64" fill="none"></rect>
-                                <circle cx="32" cy="32" r="32" fill="#40bfef" opacity="0.12"></circle>
-                                <g transform="translate(9 9)">
-                                    <circle cx="23" cy="23" r="23" fill="none" stroke="#212121" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"></circle>
-                                    <path d="M16.667,26.629A9.772,9.772,0,1,0,31.555,38.547" transform="translate(-3.029 -5.56)" fill="none" stroke="#212121" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"></path>
-                                    <path d="M23,12V26.657H33.586l4.886,10.586h3.257" transform="translate(-4.886 -2.843)" fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-                                    <line x1="8" transform="translate(18 18)" fill="none" stroke="#212121" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"></line>
-                                    <path d="M25.514,12.257A3.257,3.257,0,1,1,22.257,9a3.257,3.257,0,0,1,3.257,3.257" transform="translate(-4.143 -2.286)" fill="#212121"></path>
-                                </g>
-                            </symbol>
-                            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="illness">
-                                <rect width="64" height="64" fill="rgba(255,255,255,0)"></rect>
-                                <circle cx="32" cy="32" r="32" fill="#40bfef" opacity="0.12"></circle>
-                                <g transform="translate(9.137 8.243)">
-                                    <line x1="2.137" transform="translate(0 9.849)" fill="none" stroke="#212121" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"></line>
-                                    <line x1="2.137" transform="translate(0 15.548)" fill="none" stroke="#212121" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"></line>
-                                    <line x1="2.137" transform="translate(0 21.96)" fill="none" stroke="#212121" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"></line>
-                                    <line x1="2.137" transform="translate(0 27.659)" fill="none" stroke="#212121" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"></line>
-                                    <circle cx="2.137" cy="2.137" r="2.137" transform="translate(7.124 33.358)" fill="#212121"></circle>
-                                    <line y2="19.947" transform="translate(9.261 15.548)" fill="none" stroke="#212121" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"></line>
-                                    <path d="M293.919,378.77v-21.8a2.97,2.97,0,0,0-5.939,0v21.8a4.95,4.95,0,1,0,5.939,0Z" transform="translate(-281.85 -347.071)" fill="none" stroke="#212121" stroke-linejoin="round" stroke-width="2"></path>
-                                    <path d="M325.98,354c0,1.98-1.98,1.98-1.98,3.96s1.98,1.98,1.98,3.96-1.98,1.98-1.98,3.96" transform="translate(-282.235 -347.071)" fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-                                    <path d="M319.98,354c0,1.98-1.98,1.98-1.98,3.96s1.98,1.98,1.98,3.96-1.98,1.98-1.98,3.96" transform="translate(-282.174 -347.071)" fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-                                    <path d="M313.98,354c0,1.98-1.98,1.98-1.98,3.96s1.98,1.98,1.98,3.96-1.98,1.98-1.98,3.96" transform="translate(-282.113 -347.071)" fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-                                    <path d="M327.727,347.2a24.137,24.137,0,0,0-3-.2c-15.235,0-20.762,7.981-20.762,17,0,2.176,3.238,3.537-2.026,9.786a2.8,2.8,0,0,0-.943,2.118,2.114,2.114,0,0,0,1.282,1.93,11.223,11.223,0,0,0,3.023.556,7.22,7.22,0,0,1-.672,1.965c-.374.727-.291,1.438.412,1.723.4.16.636.272.636.272a1.124,1.124,0,0,0-.472,1.16c.159.763,1.406,1,1.669,1.76.327.943.062,1.984.062,3.447,0,1.792,1.683,2.823,3.754,2.823s8.125-1.98,8.125-1.98l.99,4.949" transform="translate(-282.002 -347)" fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-                                </g>
-                            </symbol>
-                            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="job">
-                                <rect width="64" height="64" fill="none"></rect>
-                                <circle cx="32" cy="32" r="32" fill="#40bfef" opacity="0.12"></circle>
-                                <g transform="translate(0.901 8.031)">
-                                    <path d="M13.549,33.712c1.344,2.785,3.494,7.23,4.758,9.8a4.638,4.638,0,0,0,4.258,2.936H35.544c2.515,0,3.985-1.226,3.985-3.5a3.123,3.123,0,0,0-2.272-3.321L25.939,38.447,21.383,27.73c-1.867-4.6-5.146-6.583-8.71-6.583-4.89,0-8.584,2.861-9.615,9.387L1,45.227H15.892" transform="translate(0.022 0.463)" fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-                                    <circle cx="8.841" cy="8.841" r="8.841" transform="translate(8.267 1.022)" fill="none" stroke="#212121" stroke-linejoin="round" stroke-width="2"></circle>
-                                    <path d="M60.458,36.444,32.749,29.958V7.057l27.708,5.589Z" transform="translate(0.718 0.155)" fill="none" stroke="#212121" stroke-linejoin="round" stroke-width="2"></path>
-                                    <path d="M40.278,18.861a2.733,2.733,0,0,1-.188,1.05,1.7,1.7,0,0,1-.552.726,1.938,1.938,0,0,1-.9.351,3.626,3.626,0,0,1-1.252-.075,4.711,4.711,0,0,1-1.012-.338,5.015,5.015,0,0,1-.85-.487V18.538a3.008,3.008,0,0,0,.379.334,4.345,4.345,0,0,0,.464.3,4.253,4.253,0,0,0,.511.245,3.16,3.16,0,0,0,.511.157,1.309,1.309,0,0,0,.445.016.812.812,0,0,0,.409-.173,1.03,1.03,0,0,0,.3-.413,1.808,1.808,0,0,0,.117-.705V13.891l-3.066-.652v-1.32l4.688,1Zm9.161.211a6,6,0,0,1-.269,1.934,2.938,2.938,0,0,1-.74,1.218,2.223,2.223,0,0,1-1.1.564,3.367,3.367,0,0,1-1.353-.031,3.8,3.8,0,0,1-2.516-1.647,6.124,6.124,0,0,1-.843-3.413,5.994,5.994,0,0,1,.273-1.933,2.948,2.948,0,0,1,.735-1.217,2.213,2.213,0,0,1,1.1-.564,3.342,3.342,0,0,1,1.352.028A3.8,3.8,0,0,1,48.6,15.654a6.106,6.106,0,0,1,.842,3.416Zm-1.686-.281a5.413,5.413,0,0,0-.4-2.334,1.813,1.813,0,0,0-1.323-1.021,1.4,1.4,0,0,0-.785.025,1.088,1.088,0,0,0-.535.447,2.35,2.35,0,0,0-.307.847,6.75,6.75,0,0,0-.1,1.22,5.362,5.362,0,0,0,.409,2.335,1.812,1.812,0,0,0,1.32,1.021,1.416,1.416,0,0,0,.788-.024,1.075,1.075,0,0,0,.535-.45,2.391,2.391,0,0,0,.307-.846,6.771,6.771,0,0,0,.1-1.221Zm3.427,4.925V15.233l2.738.581a4.578,4.578,0,0,1,2.17.973,2.171,2.171,0,0,1,.724,1.686,2.4,2.4,0,0,1-.075.6,1.539,1.539,0,0,1-.23.506,1.339,1.339,0,0,1-.389.365,1.385,1.385,0,0,1-.552.189,2.487,2.487,0,0,1,.607.333,2.387,2.387,0,0,1,.854,1.152,2.3,2.3,0,0,1,.127.766,1.822,1.822,0,0,1-.878,1.758,3.769,3.769,0,0,1-2.508.119ZM55.152,18.4a1.3,1.3,0,0,0-.078-.451,1.048,1.048,0,0,0-.249-.384,1.625,1.625,0,0,0-.441-.3,2.83,2.83,0,0,0-.652-.214l-.967-.205v2.248l.967.205a1.955,1.955,0,0,0,.658.046.927.927,0,0,0,.441-.166.717.717,0,0,0,.246-.327,1.246,1.246,0,0,0,.075-.449m-1.273,4.587a2.057,2.057,0,0,0,.671.041,1.109,1.109,0,0,0,.483-.167.837.837,0,0,0,.3-.345,1.1,1.1,0,0,0,.1-.478,1.276,1.276,0,0,0-.409-.949,2.535,2.535,0,0,0-1.262-.575l-.992-.211v2.445Z" transform="translate(0.778 0.261)" fill="#212121"></path>
-                                    <path d="M55.133,30.016l-5.384-1.533V26.95l5.384,1.533Z" transform="translate(1.09 0.59)" fill="none" stroke="#0094e7" stroke-linejoin="round" stroke-width="2"></path>
-                                    <path d="M30.138,38.635l-2.657-.641,8.225-3.787,21.606,5.2L49.087,43.19,38.443,40.635" transform="translate(0.602 0.749)" fill="none" stroke="#212121" stroke-linejoin="round" stroke-width="2"></path>
-                                    <line y2="4.236" transform="translate(43.12 32.364)" fill="none" stroke="#212121" stroke-linejoin="round" stroke-width="2"></line>
-                                    <line y2="4.236" transform="translate(48.441 33.649)" fill="none" stroke="#212121" stroke-linejoin="round" stroke-width="2"></line>
-                                    <rect width="62.198" height="47.938" fill="none"></rect>
-                                </g>
-                            </symbol>
-                            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="payout">
-                                <g transform="translate(-1496 -2168)">
-                                    <rect width="64" height="64" transform="translate(1496 2168)" fill="none"></rect>
-                                    <g transform="translate(1375.639 1823.568)">
-                                        <path d="M176.481,398.225l-6.192,2.571a2.547,2.547,0,0,1-2.921-1.849,2.4,2.4,0,0,1,1.224-3.161l13.447-6.03a5.186,5.186,0,0,1,3.17.12l7.5,1.411-1.251,8.45-4.63,1.122a38.293,38.293,0,0,0-6.92,3.862,13.911,13.911,0,0,1-1.991.9l-8.765,2.657a1.286,1.286,0,0,1-1.171-.193s-6.253-4.236-8.39-5.755a1.658,1.658,0,0,1,.888-2.825,1.406,1.406,0,0,1,2.2-1.1l5.1,3.426Z" transform="translate(-9.635 -9.215)" fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-                                        <path d="M139.8,389.3c-.247,1.905,1.806,3.118,3.007,3.124l1.748-2.511a4.092,4.092,0,0,0,2.219,1.266l1.979-3.788" transform="translate(-4.664 -8.656)" fill="none" stroke="#212121" stroke-linejoin="round" stroke-width="2"></path>
-                                        <path d="M151,363.748l-11.566.516-10.719,6.548-3.184-.094-3.887,9.623,8.4,3.369a5.279,5.279,0,0,0,4.349-.127l7.06-3.279,8.663-2.9a2.5,2.5,0,0,0,1.338-3.351c-.588-1.705-1.758-2.236-2.909-1.915l-8.638,2.79,2.346-5.475s4.275-.507,4.948-.582" transform="translate(0 -2.575)" fill="none" stroke="#212121" stroke-linejoin="round" stroke-width="2"></path>
-                                        <path d="M173.929,365.088l1.9-2.564-11.847-8.786-12.87,17.356" transform="translate(-7.58)" fill="none" stroke="#212121" stroke-linejoin="round" stroke-width="2"></path>
-                                        <path d="M153.714,371.62l11.353-12.5,10.918,9.917L159.3,387.412l-9.466-8.675" transform="translate(-7.25 -1.385)" fill="none" stroke="#212121" stroke-linejoin="round" stroke-width="2"></path>
-                                        <path d="M161.214,375.458a4.1,4.1,0,1,1,.28,3.227" transform="translate(-10.179 -4.863)" fill="none" stroke="#212121" stroke-linejoin="round" stroke-width="2"></path>
-                                        <path d="M172.356,362.713a3.966,3.966,0,0,1-5.6.27" transform="translate(-11.604 -2.309)" fill="none" stroke="#212121" stroke-linejoin="round" stroke-width="2"></path>
-                                        <path d="M180.844,368.985a3.966,3.966,0,0,0,.269,5.6" transform="translate(-14.963 -3.922)" fill="none" stroke="#212121" stroke-linejoin="round" stroke-width="2"></path>
-                                        <path d="M158.637,393.14a3.967,3.967,0,0,1,5.6-.268" transform="translate(-9.516 -9.801)" fill="none" stroke="#212121" stroke-linejoin="round" stroke-width="2"></path>
-                                    </g>
-                                </g>
-                            </symbol>
-                            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="purchase">
-                                <g transform="translate(-1704 -1844)">
-                                    <rect width="64" height="64" transform="translate(1704 1844)" fill="none"></rect>
-                                    <g transform="translate(1465.127 1821.583)">
-                                        <path d="M269.943,39.111l12.12.014h0a.474.474,0,0,0,.335-.81l-3.143-3.144a13.1,13.1,0,0,1,12.732-3.357.475.475,0,0,0,.485-.764c-3-3.564-6.738-5.527-10.542-5.527a12.618,12.618,0,0,0-8.66,3.662l-3.024-3.022a.474.474,0,0,0-.809.337l.03,12.138A.476.476,0,0,0,269.943,39.111Z" transform="translate(-1.395 0)" fill="none" stroke="#011520" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-                                        <path d="M245.034,39.139h5.333l6.892,32.786h36.564l2.888-26.785H251.649" transform="translate(0 -0.778)" fill="none" stroke="#011520" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-                                        <line x2="28.168" transform="translate(260.82 53.445)" fill="none" stroke="#011520" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></line>
-                                        <line x2="25.729" transform="translate(263.376 61.678)" fill="none" stroke="#011520" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></line>
-                                        <path d="M258.013,73.913v6.205h36.061" transform="translate(-0.742 -2.766)" fill="none" stroke="#011520" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-                                        <circle cx="2.979" cy="2.979" r="2.979" transform="translate(254.292 77.352)" fill="none" stroke="#011520" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
-                                        <path d="M299.059,83.473a2.979,2.979,0,1,1-2.979-2.979A2.979,2.979,0,0,1,299.059,83.473Z" transform="translate(-2.747 -3.142)" fill="none" stroke="#011520" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-                                    </g>
-                                </g>
-                            </symbol>
-                            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21.488" id="arrow">
-                                <g id="icons_l-arrow-down" transform="translate(20 21.488) rotate(180)">
-                                    <path id="l-arrow" d="M1,0A1,1,0,0,0,1,2h9v9a1,1,0,0,0,2,0V1a1,1,0,0,0-1-1Z" transform="translate(18.481 8.485) rotate(135)" fill="#0094e7"></path>
-                                    <rect id="Rectangle" width="20" height="20" transform="translate(0 1.488)" fill="none"></rect>
-                                </g>
-                            </symbol>
-                        </svg>
-                    </div>
+                            </g>
+                        </symbol>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21.488" id="arrow">
+                            <g id="icons_l-arrow-down" transform="translate(20 21.488) rotate(180)">
+                                <path id="l-arrow" d="M1,0A1,1,0,0,0,1,2h9v9a1,1,0,0,0,2,0V1a1,1,0,0,0-1-1Z"
+                                    transform="translate(18.481 8.485) rotate(135)" fill="#0094e7"></path>
+                                <rect id="Rectangle" width="20" height="20" transform="translate(0 1.488)" fill="none">
+                                </rect>
+                            </g>
+                        </symbol>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" id="i-desktop-3">
+                            <g transform="translate(-304.5 -296)">
+                                <rect width="60" height="60" transform="translate(304.5 296)" fill="none"></rect>
+                                <path
+                                    d="M-10.613-15H30.613A4.4,4.4,0,0,1,35-10.6V19.771a4.4,4.4,0,0,1-4.387,4.4H-10.613A4.4,4.4,0,0,1-15,19.771V-10.6A4.4,4.4,0,0,1-10.613-15ZM30.613,21.679a1.908,1.908,0,0,0,1.9-1.909V-10.6a1.908,1.908,0,0,0-1.9-1.909H-10.613a1.908,1.908,0,0,0-1.9,1.909V19.771a1.908,1.908,0,0,0,1.9,1.909Z"
+                                    transform="translate(324.5 319)"></path>
+                                <path d="M46.9-12.553H0V-15H46.9Z" transform="translate(311.05 348.537)"></path>
+                                <path
+                                    d="M-11.493-12.553h-2.284A1.223,1.223,0,0,1-15-13.777,1.223,1.223,0,0,1-13.777-15h2.284a1.223,1.223,0,0,1,1.223,1.223A1.223,1.223,0,0,1-11.493-12.553Z"
+                                    transform="translate(347.135 352.099)"></path>
+                                <path
+                                    d="M3.025-12.553h-16.8A1.223,1.223,0,0,1-15-13.777,1.223,1.223,0,0,1-13.777-15h16.8a1.223,1.223,0,0,1,1.223,1.223A1.223,1.223,0,0,1,3.025-12.553Z"
+                                    transform="translate(339.876 362.124)"></path>
+                                <path d="M-13.175,3.883l-1.468-6.606,2.389-.531,1.468,6.606Z"
+                                    transform="translate(351.234 344.73)"></path>
+                                <path
+                                    d="M-13.779-10.109a1.227,1.227,0,0,1-.279-.032,1.223,1.223,0,0,1-.913-1.469l.571-2.447a1.223,1.223,0,0,1,1.469-.913,1.223,1.223,0,0,1,.913,1.469l-.571,2.447A1.224,1.224,0,0,1-13.779-10.109Z"
+                                    transform="translate(343.52 359.681)"></path>
+                                <path
+                                    d="M7.676,0H3.3A1.81,1.81,0,0,1,1.948-.425a1.909,1.909,0,0,1-.405-1.353V-12.539A1.874,1.874,0,0,1,1.958-13.9,1.843,1.843,0,0,1,3.3-14.316H7.939a10.824,10.824,0,0,1,1.777.127,3.787,3.787,0,0,1,1.348.488,3.536,3.536,0,0,1,.9.767,3.383,3.383,0,0,1,.6,1.025,3.431,3.431,0,0,1,.205,1.187,3.292,3.292,0,0,1-2.148,3.145q2.822.9,2.822,3.5a3.929,3.929,0,0,1-.615,2.163A3.692,3.692,0,0,1,11.162-.5a5.9,5.9,0,0,1-1.5.386A15.325,15.325,0,0,1,7.676,0ZM7.461-6.357H4.443v4.18H7.559Q10.5-2.178,10.5-4.3a1.728,1.728,0,0,0-.762-1.572A4.267,4.267,0,0,0,7.461-6.357ZM4.443-12.139v3.7H7.1a5.334,5.334,0,0,0,1.675-.205,1.6,1.6,0,0,0,.9-.781,1.76,1.76,0,0,0,.244-.918,1.425,1.425,0,0,0-.771-1.44A5.894,5.894,0,0,0,6.8-12.139Z"
+                                    transform="translate(327.01 327.316)"></path>
+                            </g>
+                        </symbol>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="i-mobile">
+                            <g transform="translate(-1074 -254)">
+                                <rect width="64" height="64" transform="translate(1074 254)" fill="none"></rect>
+                                <path
+                                    d="M-9.108-15H10a5.9,5.9,0,0,1,5.892,5.892V29.108A5.9,5.9,0,0,1,10,35H-9.108A5.9,5.9,0,0,1-15,29.108V-9.108A5.9,5.9,0,0,1-9.108-15ZM10,32.475a3.371,3.371,0,0,0,3.367-3.367V-9.108A3.371,3.371,0,0,0,10-12.475H-9.108a3.371,3.371,0,0,0-3.367,3.367V29.108a3.371,3.371,0,0,0,3.367,3.367Z"
+                                    transform="translate(1105 276)"></path>
+                                <path
+                                    d="M-12.989-15a2.013,2.013,0,0,1,2.011,2.011,2.013,2.013,0,0,1-2.011,2.011A2.013,2.013,0,0,1-15-12.989,2.013,2.013,0,0,1-12.989-15Z"
+                                    transform="translate(1118.435 318.72)"></path>
+                                <path
+                                    d="M13.419-12.587H-13.735A1.237,1.237,0,0,1-15-13.793,1.237,1.237,0,0,1-13.735-15H13.419a1.237,1.237,0,0,1,1.265,1.207A1.237,1.237,0,0,1,13.419-12.587Z"
+                                    transform="translate(1105.603 315.107)"></path>
+                                <path
+                                    d="M13.419-12.587H-13.735A1.237,1.237,0,0,1-15-13.793,1.237,1.237,0,0,1-13.735-15H13.419a1.237,1.237,0,0,1,1.265,1.207A1.237,1.237,0,0,1,13.419-12.587Z"
+                                    transform="translate(1105.603 284.226)"></path>
+                                <path
+                                    d="M-3.658-12.587H-13.793A1.207,1.207,0,0,1-15-13.793,1.207,1.207,0,0,1-13.793-15H-3.658a1.207,1.207,0,0,1,1.207,1.207A1.207,1.207,0,0,1-3.658-12.587Z"
+                                    transform="translate(1114.172 279.982)"></path>
+                            </g>
+                        </symbol>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" id="i-desktop-4">
+                            <g transform="translate(-304.5 -296)">
+                                <rect width="60" height="60" transform="translate(304.5 296)" fill="none"></rect>
+                                <path
+                                    d="M-10.613-15H30.613A4.4,4.4,0,0,1,35-10.6V19.771a4.4,4.4,0,0,1-4.387,4.4H-10.613A4.4,4.4,0,0,1-15,19.771V-10.6A4.4,4.4,0,0,1-10.613-15ZM30.613,21.679a1.908,1.908,0,0,0,1.9-1.909V-10.6a1.908,1.908,0,0,0-1.9-1.909H-10.613a1.908,1.908,0,0,0-1.9,1.909V19.771a1.908,1.908,0,0,0,1.9,1.909Z"
+                                    transform="translate(324.5 319)"></path>
+                                <path d="M46.9-12.553H0V-15H46.9Z" transform="translate(311.05 348.537)"></path>
+                                <path
+                                    d="M-11.493-12.553h-2.284A1.223,1.223,0,0,1-15-13.777,1.223,1.223,0,0,1-13.777-15h2.284a1.223,1.223,0,0,1,1.223,1.223A1.223,1.223,0,0,1-11.493-12.553Z"
+                                    transform="translate(347.135 352.099)"></path>
+                                <path
+                                    d="M3.025-12.553h-16.8A1.223,1.223,0,0,1-15-13.777,1.223,1.223,0,0,1-13.777-15h16.8a1.223,1.223,0,0,1,1.223,1.223A1.223,1.223,0,0,1,3.025-12.553Z"
+                                    transform="translate(339.876 362.124)"></path>
+                                <path d="M-13.175,3.883l-1.468-6.606,2.389-.531,1.468,6.606Z"
+                                    transform="translate(351.234 344.73)"></path>
+                                <path
+                                    d="M-13.779-10.109a1.227,1.227,0,0,1-.279-.032,1.223,1.223,0,0,1-.913-1.469l.571-2.447a1.223,1.223,0,0,1,1.469-.913,1.223,1.223,0,0,1,.913,1.469l-.571,2.447A1.224,1.224,0,0,1-13.779-10.109Z"
+                                    transform="translate(343.52 359.681)"></path>
+                                <path
+                                    d="M10.723-1.621l-.684-1.8H4.219L3.535-1.582a6.427,6.427,0,0,1-.684,1.45,1.087,1.087,0,0,1-.928.376,1.36,1.36,0,0,1-.967-.4,1.226,1.226,0,0,1-.42-.908,2.026,2.026,0,0,1,.1-.605q.1-.313.322-.869l3.662-9.3L5-12.8a4.864,4.864,0,0,1,.469-.933,1.9,1.9,0,0,1,.654-.6,2.006,2.006,0,0,1,1-.229,2.027,2.027,0,0,1,1.011.229,1.943,1.943,0,0,1,.654.591,4.144,4.144,0,0,1,.42.776q.171.415.435,1.108l3.74,9.238a4.644,4.644,0,0,1,.439,1.533,1.269,1.269,0,0,1-.415.913,1.364,1.364,0,0,1-1,.415,1.3,1.3,0,0,1-.586-.122,1.2,1.2,0,0,1-.41-.332,3.055,3.055,0,0,1-.356-.645Q10.859-1.289,10.723-1.621ZM4.98-5.6H9.258L7.1-11.5Z"
+                                    transform="translate(327.322 327.561)"></path>
+                            </g>
+                        </symbol>
+                    </svg>
                 </div>
-<!-- landing page content end -->
+            </div>
+            <!-- landing page content end -->
 
-                <!-- scripts -->
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-                <script src="js/switcher.js"></script>
-                <script src="js/script.js"></script>
+            <!-- scripts -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script src="js/switcher.js"></script>
+            <script src="js/script.js"></script>
         </div>
-    </body>
+</body>
+
 </html>
