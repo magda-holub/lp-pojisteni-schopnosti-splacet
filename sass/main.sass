@@ -19,7 +19,7 @@
             background: linear-gradient(to  bottom,  $white 50%, $grey-0 100%)
             position: relative
 
-            &--caption
+            &__caption
                 @include flexVert
                 gap: 40px
                 position: relative
@@ -28,7 +28,7 @@
                 p
                     margin-top: 0
 
-            &--list
+            &__list
                 @include flexVert
                 gap: 16px
                 list-style: none
@@ -51,7 +51,7 @@
                         background-position: center
 
 
-            &--backdrop
+            &__backdrop
                 position: absolute
                 top: 0
                 right: -1px
@@ -63,7 +63,7 @@
             gap: 48px
             background-color: $grey-0
 
-            &--caption
+            &__caption
                 text-align: center
                 @include flexVert
                 align-items: center
@@ -73,7 +73,7 @@
                     width: 70%
                     margin-top: 0
 
-            &--box
+            &__box
                 background-color: $white
                 border-radius: 8px
                 box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15)
@@ -90,11 +90,11 @@
                     &:hover
                         color: $blue-alza
 
-            &--icons
+            &__icons
                 @include flexOr
                 justify-content: space-between
 
-            &--unit
+            &__unit
                 @include flexVert
                 align-items: center
                 gap: 24px
@@ -104,7 +104,7 @@
                     text-align: center
                     color: $grey-6
 
-            &--toggle--content
+            &__toggle__content
                 margin-top: 40px
                 max-height: 0
                 overflow: hidden
@@ -118,10 +118,10 @@
                     &:hover
                         color: $blue-alza
 
-                p.lp-case--conditions
+                p.lp-case__conditions
                     margin-top: 40px
 
-            &--toggle--button
+            &__toggle__button
                 margin: auto
                 color: $grey-5
                 display: block
@@ -129,18 +129,18 @@
                 text-align: center
                 cursor: pointer
 
-            &--table
+            &__table
                 @include flexOr
                 padding: 2px 4px 0 0
 
                 ul
                     list-style-type: none
 
-            &--legend
+            &__legend
                 text-align: right
                 margin-top: 74px
 
-                &--cell
+                &__cell
                     &:nth-of-type(odd)
                         background-color: $grey-0
 
@@ -156,27 +156,27 @@
                         height: 117.5px
                         padding: 38px 20px
 
-            &--boxes
+            &__boxes
                 @include flexOr
                 gap: 20px
                 
-            &--column
+            &__column
                 text-align: center
                 flex: 1 1 0
                 background-color: $white
                 border-radius: 4px
                 box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15)
 
-                &:nth-of-type(-n+2) .lp-case--column--cell:last-of-type
+                &:nth-of-type(-n+2) .lp-case__column__cell:last-of-type
                     padding: 20px
                     
                 &:last-of-type
                     flex-basis: 4%
 
-                    .lp-case--column--cell:last-of-type
+                    .lp-case__column__cell:last-of-type
                         padding-top: 88px
             
-                &--cell
+                &__cell
                     padding: 10px 20px
 
                     &:nth-of-type(even)
@@ -188,16 +188,17 @@
                     &:last-of-type
                         margin-bottom: 32px
 
-            &--conditions
+            &__conditions
                 text-align: center
                     
         &-purchase
             @include section(80, 122, 60, 122)
             @include flexVert
+            align-items: center
             gap: 48px
             position: relative
 
-            &--caption
+            &__caption
                 text-align: center
                 @include flexVert
                 align-items: center
@@ -214,7 +215,7 @@
                     &:hover
                         color: $blue-alza
 
-            &--icons
+            &__icons
                 @include flexOr
                 gap: 24px
 
@@ -222,7 +223,7 @@
                     width: 64px
                     height: 64px
 
-            &--unit
+            &__unit
                 @include flexVert
                 align-items: center
                 gap: 24px
@@ -237,11 +238,11 @@
                     color: $grey-6
                     text-decoration: none
 
-            &--screen
+            &__screen
                 border-radius: 4px
                 z-index: 10
 
-            &--backdrop
+            &__backdrop
                 position: absolute
                 bottom: 0
                 left: 0
@@ -255,7 +256,7 @@
             gap: 48px
             background-color: $grey-0
 
-            &--caption
+            &__caption
                 text-align: center
                 @include flexVert
                 gap: 24px
@@ -263,12 +264,12 @@
                 p
                     margin-top: 0
 
-            &--units
+            &__units
                 @include flexVert
                 gap: 16px
                 width: 100%
 
-            &--box 
+            &__box 
                 background-color: $white
                 border-radius: 8px
                 box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15)
@@ -279,7 +280,7 @@
                 &:hover
                     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2)
 
-                &__handle 
+                &--handle 
                     @include flexOr
                     gap: 16px
                     color: $blue-media
@@ -288,7 +289,7 @@
                         color: $blue-media
                 
 
-                &__content 
+                &--content 
                     padding: 0 36px
                     max-height: 0
                     overflow: hidden
@@ -299,15 +300,15 @@
                     p
                         margin-top: 0
                 
-                &__active 
-                    .lp-faq--box__content 
+                &--active 
+                    .lp-faq__box--content 
                         padding: 8px 36px 20px
                         opacity: 1
 
-                    .lp-faq--box--icon
+                    .lp-faq__box__icon
                         transform: rotate(0deg)
 
-                &--icon
+                &__icon
                     width: 20px
                     height: 20px
                     transform: rotate(180deg)
@@ -326,13 +327,13 @@
         max-height: 506px !important
 
     .lp-case
-        &--box
+        &__box
             padding: 48px
 
-        &--legend
+        &__legend
             margin-top: 59px
 
-            &--cell
+            &__cell
                 &:nth-of-type(1)
                     height: 98.5px
                     padding: 40px 20px
@@ -341,25 +342,25 @@
                     height: 175.5px
                     padding: 66px 20px
 
-        &--boxes
+        &__boxes
             gap: 10px
             
-        &--column
+        &__column
             &:last-of-type
                 flex-basis: 2%
 
-                .lp-case--column--cell:last-of-type
+                .lp-case__column__cell:last-of-type
                     padding-top: 100px
 
             &:nth-of-type(2), &:nth-of-type(4)
-                .lp-case--column--cell:nth-of-type(2)
+                .lp-case__column__cell:nth-of-type(2)
                     padding: 30px 10px
 
             &:nth-of-type(1), &:nth-of-type(2)
-                .lp-case--column--cell:last-of-type
+                .lp-case__column__cell:last-of-type
                     padding: 39px 10px
                       
-            &--cell
+            &__cell
                 padding: 10px
 
                 &:nth-of-type(2), &:nth-of-type(4)
@@ -373,29 +374,29 @@
 
         .lp
             &-case
-                &--toggle--content
+                &__toggle__content
                     overflow-x: visible
                     position: relative
                     margin-top: 20px
 
-                &--table
+                &__table
                     width: 1018px
                     overflow-x: scroll
                     padding: 2px 4px 32px 0
                     margin-top: 96px
 
-                &--conditions
+                &__conditions
                     margin-bottom: 40px
                     position: sticky
                     bottom: 100%
                     left: 0
 
-                &--icons
+                &__icons
                     flex-wrap: wrap
                     justify-content: center
                     gap: 32px
 
-                &--unit
+                &__unit
                     gap: 8px
 
 @media only screen and (max-width: 826px)
@@ -405,51 +406,51 @@
             &-header
                 @include section(48, 20, 40, 20)
 
-                &--caption
+                &__caption
                     h2, p
                         text-align: center
 
             &-case
                 @include section(40, 20, 40, 20)
 
-                &--caption
+                &__caption
                     p
                         width: 100%
 
-                &--icons
+                &__icons
                     flex-wrap: wrap
                     justify-content: center
                     gap: 32px
 
-                &--box
+                &__box
                     padding: 48px
 
             &-purchase
                 @include section(40, 20, 40, 20)
 
-                &--caption
+                &__caption
                     p
                         width: 100%
 
             &-faq
                 @include section(40, 20, 40, 20)
 
-                &--caption
+                &__caption
                     p
                         width: 100%
 
-                &--box
-                    &__handle h4
+                &__box
+                    &--handle h4
                         flex: 1 1 0
 
-                    &--icon
+                    &__icon
                         width: 12px
 
-                    &__content 
+                    &--content 
                         padding: 0 28px
                 
-                    &__active 
-                        .lp-faq--box__content 
+                    &--active 
+                        .lp-faq__box--content 
                             padding: 8px 28px 20px
 
 @media only screen and (max-width: 622px)
@@ -457,16 +458,16 @@
     .mobileapp #landingpage
         .lp
             &-case
-                &--table
+                &__table
                     margin-top: 106px
 
             &-purchase
-                &--icons
+                &__icons
                     flex-direction: column
                     align-items: center
                     gap: 32px
                 
-                &--unit
+                &__unit
                     max-width: 350px
                     gap: 8px
 
@@ -478,7 +479,7 @@
         
         .lp
             &-case
-                &--table
+                &__table
                     margin-top: 126px
 
 
@@ -490,6 +491,6 @@
         
         .lp
             &-case
-                &--table
+                &__table
                     margin-top: 156px
 
